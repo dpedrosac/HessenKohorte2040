@@ -1,0 +1,102 @@
+%%%%%%%%%%%% 			Start with the document  			%%%%%%%%%%%%%
+\documentclass[
+	a4paper, 
+	11.5pt,
+	headings=small, 
+	twoside, 
+	titlepage=firstiscover, 
+ 	pagesize=auto,
+  	version=last,
+	open=any,
+	BCOR=12mm,
+  	chapterprefix=false]{scrbook}
+\setkomafont{sectioning}{\rmfamily}
+\usepackage{bookman}
+\KOMAoptions{DIV=10}
+
+%%%%%%%%%%%%				Präambel				%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\addto{\captionsngerman}{
+  \renewcommand*\contentsname{Inhalt}}
+
+%\usepackage[bindingoffset=2mm]{geometry}% Bindeverlust von 8mm einbeziehen
+\usepackage{siunitx}
+\sisetup{per-mode = symbol, round-mode=places, detect-all}
+
+\usepackage{ebgaramond}
+\usepackage{setspace}
+\setstretch{1.5}
+\usepackage{nameref}
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage{booktabs,tabularx,dcolumn}
+\usepackage[printonlyused, smaller]{acronym}
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{ {media/} }
+
+\usepackage[
+	font=footnotesize, 
+	format=plain, % Die Beschriftung als Absatz.
+ 	indention=1.5cm, % Einzug der Beschriftung ist 1cm.
+ 	textformat=simple, % Der Text soll nicht verändert werden.
+ 	labelfont=footnotesize, % Der Bezeichner soll groß und fett geschrieben werden.
+ 	textfont=it % Der Text soll kursiv gesetzt werden.
+]{caption}
+
+\usepackage[headsepline,automark,markcase=noupper]{scrlayer-scrpage} %Titel in Kopfzeile
+\renewcommand*{\sectionmarkformat}{\thesection. \ }
+
+\usepackage{xcolor}
+\usepackage[bottom]{footmisc}
+\usepackage{microtype}
+\usepackage[round]{natbib}
+\bibliographystyle{abbrvnat}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage[export]{adjustbox}
+
+\usepackage{anyfontsize}
+\setkomafont{chapter}{\normalfont\Large}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{.80\baselineskip}}
+\renewcommand*{\chapterheadendvskip}{\vspace*{.2\baselineskip}}
+\renewcommand*{\chapterformat}{%
+  {\fontsize{25}{30}\scshape\chapappifchapterprefix{}}%
+  \fontsize{64}{30}\selectfont\rlap{\thechapter\autodot}%
+}
+\renewcommand*{\raggedchapter}{\raggedleft}
+
+\renewcommand*\othersectionlevelsformat[3]{%
+  \llap{#3\autodot\enskip}%
+}
+
+\setkomafont{section}{\large\rmfamily}
+
+\usepackage{blindtext}
+\definecolor{headlinie}{RGB}{84,84,84}
+\setcapindent{5pt}
+\usepackage[headsepline,automark]{scrlayer-scrpage}
+\addtokomafont{headsepline}{\color{headlinie}}
+\KOMAoptions{headsepline=.1pt}
+	
+\usepackage{lipsum}  
+\usepackage{hyperref}
+
+ %%%%%%%%%%%%				Metadaten  				%%%%%%%%%%%%
+\hypersetup{
+	pdftitle={Protocol - HessenKohorte, Neurology Department, Philipps-University Marburg},
+	pdfsubject={Habilitationsschrift},
+	pdfauthor={PD Dr. med. David J. Pedrosa},
+	pdfkeywords={Parkinson's disease, cohort study, hassia, quality-of-life}
+}
+
+\newcolumntype{d}[1]{D..{#1}}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcommand\mc[1]{\multicolumn{1}{C}{#1}} % shortcut macro
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+
+\begin{document}
+
+\end{document}
