@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  18 APR 2022 22:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  18 APR 2022 23:40
 entering extended mode
 **./protocol-HessenKohorte2040.v1.0.tex
 (protocol-HessenKohorte2040.v1.0.tex
@@ -214,12 +214,20 @@ Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthogr
 aphy)
 Package babel Info: Making " an active character on input line 122.
 )))
+(C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-08-27 L3 programming layer (loader) 
+
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count194
+\l__pdf_internal_box=\box52
+))
 (C:\Program Files\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2021-09-29 v3.0.32 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen140
-\l__siunitx_angle_marker_box=\box52
-\l__siunitx_angle_unit_box=\box53
-\l__siunitx_compound_count_int=\count194
+\l__siunitx_angle_marker_box=\box53
+\l__siunitx_angle_unit_box=\box54
+\l__siunitx_compound_count_int=\count195
 
 (C:\Program Files\MiKTeX\tex/latex/translations\translations.sty
 Package: translations 2021/01/17 v1.10a internationalization of LaTeX2e package
@@ -227,7 +235,7 @@ s (CN)
 
 (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count195
+\etb@tempcnta=\count196
 )
 (C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
@@ -246,11 +254,11 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-\l__siunitx_number_exponent_fixed_int=\count196
-\l__siunitx_number_min_decimal_int=\count197
-\l__siunitx_number_min_integer_int=\count198
-\l__siunitx_number_round_precision_int=\count199
-\l__siunitx_number_group_minimum_int=\count266
+\l__siunitx_number_exponent_fixed_int=\count197
+\l__siunitx_number_min_decimal_int=\count198
+\l__siunitx_number_min_integer_int=\count199
+\l__siunitx_number_round_precision_int=\count266
+\l__siunitx_number_group_minimum_int=\count267
 
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
@@ -271,28 +279,20 @@ Package color Info: Driver file: pdftex.def on input line 149.
 (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\l__siunitx_table_tmp_box=\box54
+\l__siunitx_table_tmp_box=\box55
 \l__siunitx_table_tmp_dim=\dimen142
 \l__siunitx_table_column_width_dim=\dimen143
-\l__siunitx_table_integer_box=\box55
-\l__siunitx_table_decimal_box=\box56
-\l__siunitx_table_before_box=\box57
-\l__siunitx_table_after_box=\box58
+\l__siunitx_table_integer_box=\box56
+\l__siunitx_table_decimal_box=\box57
+\l__siunitx_table_before_box=\box58
+\l__siunitx_table_after_box=\box59
 \l__siunitx_table_before_dim=\dimen144
 \l__siunitx_table_carry_dim=\dimen145
-\l__siunitx_unit_tmp_int=\count267
-\l__siunitx_unit_position_int=\count268
-\l__siunitx_unit_total_int=\count269
+\l__siunitx_unit_tmp_int=\count268
+\l__siunitx_unit_position_int=\count269
+\l__siunitx_unit_total_int=\count270
 
 (C:\Program Files\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
-(C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2021-08-27 L3 programming layer (loader) 
-
-(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count270
-\l__pdf_internal_box=\box59
-))
 Package: l3keys2e 2021-08-27 LaTeX2e option processing using LaTeX3 keys
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\array.sty
@@ -909,7 +909,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip76
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 10
-0.
+2.
 
 (C:\Program Files\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -918,27 +918,27 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Warning: Unused global option(s):
     [11.5pt].
 
-No file protocol-HessenKohorte2040.v1.0.aux.
+(protocol-HessenKohorte2040.v1.0.aux)
 \openout1 = `protocol-HessenKohorte2040.v1.0.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
 
 (C:\Program Files\MiKTeX\tex/latex/translations/dicts\translations-basic-dictio
 nary-german.trsl
@@ -946,7 +946,7 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 100.
+or `german'. on input line 102.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count337
@@ -986,14 +986,14 @@ Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                option `singlespacing=true'
 (scrlayer-scrpage)                to avoid this warning.
 
-LaTeX Info: Redefining \microtypecontext on input line 100.
+LaTeX Info: Redefining \microtypecontext on input line 102.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 100.
+LaTeX Info: Redefining \showhyphens on input line 102.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1009,10 +1009,12 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring OFF on input line 100.
-LaTeX Info: Redefining \ref on input line 100.
-LaTeX Info: Redefining \pageref on input line 100.
-LaTeX Info: Redefining \nameref on input line 100.
+Package hyperref Info: Link coloring OFF on input line 102.
+LaTeX Info: Redefining \ref on input line 102.
+LaTeX Info: Redefining \pageref on input line 102.
+LaTeX Info: Redefining \nameref on input line 102.
+
+(protocol-HessenKohorte2040.v1.0.out) (protocol-HessenKohorte2040.v1.0.out)
 \@outlinefile=\write3
 \openout3 = `protocol-HessenKohorte2040.v1.0.out'.
 
@@ -1023,7 +1025,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 100.
+(scrbook)           before \begin{document} on input line 102.
 
 (C:\Program Files\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1032,30 +1034,146 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count345
 ))
-(protocol-HessenKohorte2040.v1.0.aux)
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+27.
 
-Package rerunfilecheck Warning: File `protocol-HessenKohorte2040.v1.0.out' has 
-changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+27.
 
-Package rerunfilecheck Info: Checksums for `protocol-HessenKohorte2040.v1.0.out
-':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+(C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+127.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+127.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 127.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 127.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 127.
+
+
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 20.4pt needed,
+(scrlayer-scrpage)                but only 17.0pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting typearea's option
+(scrlayer-scrpage)                `headheight=20.4pt'.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
+27.
+
+
+Overfull \vbox (3.4pt too high) has occurred while \output is active []
+
+
+
+Package scrlayer-scrpage Warning: \footheight to low.
+(scrlayer-scrpage)                At least 20.4pt needed,
+(scrlayer-scrpage)                but only 17.0pt found.
+(scrlayer-scrpage)                I'll enlarge \footheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting typearea's option
+(scrlayer-scrpage)                `footheight=20.4pt'.
+(scrlayer-scrpage)                I'll also increase \footskip on input line 12
+7.
+
+[1
+
+
+{C:/Users/dpedr/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+chapter 1.
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface.
+
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/25'.
+(microtype)             Ignoring protrusion settings for this character.
+[2
+
+]
+chapter 2.
+Package acronym Info: Label `acro:ICF' newly defined as it shall be overridden
+although it is yet undefined on input line 149.
+[3
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+64.
+ (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package acronym Info: Label `acro:EC' newly defined as it shall be overridden
+although it is yet undefined on input line 166.
+
+Underfull \vbox (badness 3679) has occurred while \output is active []
+
+ [4]
+Package acronym Info: Label `acro:MRI' newly defined as it shall be overridden
+although it is yet undefined on input line 196.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ac' on input line 196.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+[6]
+chapter 3.
+[7
+
+] (protocol-HessenKohorte2040.v1.0.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `protocol-HessenKohorte2040.v1.0.out' has not
+ changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24766 strings out of 478927
- 493083 string characters out of 2862391
- 1078068 words of memory out of 3000000
- 42254 multiletter control sequences out of 15000+600000
- 408160 words of font info for 33 fonts, out of 8000000 for 9000
+ 25234 strings out of 478927
+ 502927 string characters out of 2862391
+ 1088164 words of memory out of 3000000
+ 42564 multiletter control sequences out of 15000+600000
+ 445910 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,1n,117p,10663b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-No pages of output.
+ 108i,19n,117p,10663b,858s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKT
+eX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/
+lmb10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr9.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmro10.pfb>
+Output written on protocol-HessenKohorte2040.v1.0.pdf (7 pages, 193621 bytes).
 PDF statistics:
- 2 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 2049 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 26937 words of extra memory for PDF output out of 29859 (max. 10000000)
 

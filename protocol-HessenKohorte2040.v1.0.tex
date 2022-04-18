@@ -20,6 +20,8 @@
 \usepackage[ngerman]{babel}
 \addto{\captionsngerman}{
   \renewcommand*\contentsname{Inhalt}}
+\usepackage{expl3}
+\csname sys_if_shell_unrestricted:T\endcsname{\usepackage{gitver}} 
 
 %\usepackage[bindingoffset=2mm]{geometry}% Bindeverlust von 8mm einbeziehen
 \usepackage{siunitx}
@@ -99,4 +101,109 @@
 
 \begin{document}
 
+
+ %%%%%%%%%%%%  				Abkürzungsverzeichnis  				%%%%%%%%%%%%
+
+\chapter*{Abbreviations}
+\phantomsection
+\thispagestyle{plain}
+\begin{multicols}{2}
+\begin{acronym}[GABA]
+\acro{DBS}[DBS]{Deep Brain Stimulation}
+\acro{EC}[EC]{Ethics Committee}
+\acro{EEG}[EEG]{Electroencephalography}
+\acro{GPe}[GPe]{\textit{Globus pallidus, pars externa}}
+\acro{ICF}[ICF]{Informed consent form}
+
+\acro{GPi}[GPi]{\textit{Globus pallidus, pars interna}}
+\acro{MNI}[MNI]{Montréal Neurological Institute}
+\acro{MRI}[MRI]{Magnetic resonance imaging}
+\acro{PD}[PD]{Parkinson's disease}
+\acro{SNc}[SNc]{\textit{Substantia nigra, pars compacta}}
+\acro{STN}[STN]{\textit{Nucleus subthalamicus}}
+\end{acronym}
+\end{multicols}
+
+\chapter{Preamble}
+\chapter{Protocol}
+\section{Introduction}
+\subsection{Background}
+\subsection{Geographic context}
+\section{Study objectives and Endpoints}
+\section{Study design}
+\section{Subject selection}
+\label{sec:study_selection}
+\subsection{Study population and Eligibility}
+\subsection{Inclusion criteria}
+\subsection{Exclusion criteria}
+
+\section{Subject accountability}
+
+\subsection{Point of enrollment}
+
+\subsection{Withdrawal}
+
+\subsection{Lost to follow-up}
+
+\subsection{Subject status and classification}
+A subject will be considered enrolled in this study at the time of the study-specific \ac{ICF} execution.
+
+\subsection{Enrolment control}
+The overall enrollment in the study will be capped at 1000 participants.
+
+\subsection{End-of-study definition}
+The study is considered complete when 20 years from the first enrolment are over.
+
+\section{Study methods}
+\subsection{Candidate Screening}
+Subjects will be screened for participation in the study based on study Inclusion and exclusion criteria as listed in Section \ref{sec:study_selection}. Subjects who have provided informed consent and who have been determined to not meet all eligibility requirements will be withdrawn.
+
+\subsection{Informed consent}
+Written informed consent must be obtained from potential study candidates and enrollment is only valid, after subjects sign and date the \ac{ICF}.
+\begin{itemize}
+\item Subjects will be asked to sign the \ac{ICF} before study-specific tests or procedures are performed;
+\item The idea of the study must be explained, and subjects must be given the time and opportunity to ask questions and have those questions answered to their satisfaction.
+\item The \ac{ICF} is study specific and has been approved by the\ac{EC}.
+\item Written informed consent must be recorded appropriately by means of the subject’s dated signature.
+\end{itemize}
+
+\section{Statistical considerations}
+
+\section{Data management}
+
+\section{Amendments}
+In case of protocol changes possibly affecting the rights, safety or welfare of any subjects or scientific integrity of the data, a protocol amendment will be completed. Appropriate approvals (especially from the \ac{EC}) of the revised protocol must be obtained prior to its implementation.
+
+\section{Compliance}
+\subsection{Statement of Compliance}
+This study will be conducted in accordance with ICH-GCP and with the ethical principles originating in the Declaration of Helsinki. 
+
+\subsection{Investigator responsibilities}
+
+\subsubsection{Delegation of responsibilities}
+
+\subsection{Ethics committee}
+
+
+\section{Monitoring}
+
+\section{Potential Risks and Benefits}
+
+\subsection{Anticipated Adverse Events}
+
+\subsection{Risks associated with the study participation}
+
+\subsection{Risks associated with the \ac{MRI}}
+
+\section{Safety Reporting}
+
+\section{Informed consent}
+
+\section{Suspension or termination of the study}
+
+\section{Study registration and Results}
+
+\section{Bibliography}
+
+\chapter{Appendix}
 \end{document}
