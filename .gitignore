@@ -1,5 +1,6 @@
 ## Folders
-/word_templates/
+/word_templates
+*.docx
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
