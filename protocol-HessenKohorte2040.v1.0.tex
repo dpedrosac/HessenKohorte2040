@@ -63,6 +63,7 @@
 \usepackage[round]{natbib}
 \bibliographystyle{abbrvnat}
 \usepackage{multicol}
+\usepackage{ltablex}
 \usepackage{pdfpages}
 \usepackage[export]{adjustbox}
 
@@ -130,6 +131,7 @@
 \acro{EC}[EC]{Ethics Committee}
 \acro{EEG}[EEG]{Electroencephalography}
 \acro{GPe}[GPe]{\textit{Globus pallidus, pars externa}}
+\acro{HRQOL}[HRQOL]{health-related-quality-of-life}
 \acro{ICF}[ICF]{Informed consent form}
 
 \acro{iPS}[iPS]{idiopathic Parkinson's syndrome}
@@ -167,24 +169,31 @@
 \toprule
 \textbf{Role} & \textbf{Contact} \\
 \cmidrule{1-2}
-Clinical contact 	& PD Dr. David Pedrosa \\
-			& Neurology Department, \UKGM (Marburg site)\\
+Clinical contact 	& PD Dr. David Pedrosa (principal investigator) \\
+			& Neurology Department, \UKGM, (Marburg site)\\
 			& Baldingerstr.\\
 			& 35043 Marburg\\
 			& \href{mailto:david.pedrosa@staff.uni-marburg.de}{david.pedrosa@staff.uni-marburg.de}\\
-\bottomrule
+	\\
+			& Dr. rer. nat. Urs Kleinholdermann (study coordinator) \\
+			& Neurology Department, \UKGM, (Marburg site)\\
+			& Baldingerstr.\\
+			& 35043 Marburg\\
+			& \href{mailto:urs.kleinholdermann@staff.uni-marburg.de}{urs.kleinholdermann@staff.uni-marburg.de}\\
+
+\cmidrule{1-2}
 Responsible for \ac{MRI}-acquisition & Marina Ruppert, M.Sc.\\
-			& Neurology Department, \UKGM (Marburg site)\\
+			& Neurology Department, \UKGM, (Marburg site)\\
 			& Baldingerstr.\\
 			& 35043 Marburg\\
 			& \href{mailto:marina.ruppert@uni-marburg.de}{marina.ruppert@uni-marburg.de}\\
-\bottomrule
+\cmidrule{1-2}
 Data protection officer & \\
 			& XXX\\
 			& XXX\\
 			& XXX\\
 			& XXX\\
-
+\bottomrule
 \end{tabularx}
 \newpage
 
@@ -202,17 +211,14 @@ A & Mai 19th, 2022 &  & - & Initial version & Initial version \\
 \chapter{Protocol}
 \section{Introduction}
 \subsection{Background}
-Parkinson's syndrome represent chronic neurodegenerative conditions manifesting with with both motor and non-motor symptoms. The symptoms have a major psychosocial impact and lead to considerable losses in the quality of life of patients and a high burden on (informal) caregivers. So far, various instruments have been developed to assess quality of life, some of them specific to \ac{PD}. However, none of the models takes into account the positive aspects of well-being, as well as the personal attitiude (e.g., optimism)  and social resilience factors (e.g., social support, social integration, etc.). In the context of the project, an investigation of the quality of life of \ac{PD}-patients will be carried out. For this purpose, the quality of life of patients will be examined primarily longitudinally with established and validated questionnaires over a very long period of time. In a further step, it will be examined whether holistic observations of the quality of life can also provide meaningful statements. The envisaged instrument for recording this, the so-called \ac{CHAPO} model, an approach initially developed for evaluating the quality of life of the very old (NRW80+ (Quelle?)). By adapting it to aspects of quality of life specific to Parkinson's disease, as the \acs{CHAPO-PD} model, it will find application in this cohort study. Thus, the aim of the study is the assessment of quality of life using digital solutions with classical parameters for the evaluation of \acl{QoL} such as symptoms of the diseases and limitations in everyday life. The aim is to establish a digital \ac{QoL} monitoring system with the goal of assessing Parkinson's patients in a standardized way throughout the course of their disease and to evaluate their quality of life.
-We would like to relate the data obtained in this way to the annual follow-up cranial MRI and the biomedical markers obtained from stool, urine, saliva, hair and blood samples. This would conceivably identify imaging or biomedical markers with predictive value for quality of life change.
-
-In addition, the study will include a follow-up assessment of necessary support services to improve understanding of the needs of family members of \ac{PD}-patients. This should make it possible to develop a demand-oriented support offer according to the different phases of the disease. The stress experience, changes in sleep behavior and the losses in quality of life over the observation period are also included in the analysis in order to detect a surrogate for adequate support.
-
+\ac{PD} represents a chronic neurodegenerative condition manifesting with both motor and non-motor symptoms. The disabilities in \ac{PD} have a major psychosocial impact and lead to considerable losses in patients' quality of life and a high burden on (informal) caregivers. To date, various instruments have been developed to assess \ac{HRQOL}, some of which are specific to \ac{PD} (Quelle Stuerenberg 2022). Nevertheless, none of the models takes into account the positive aspects of well-being, as well as the personal attitiude (e.g., optimism) and social resilience factors like social support, degree of integration, to name a few. In the context of this project, an investigation of the hollistic quality of life of \ac{PD}-patients will be carried out. For this purpose, life quality will be assessed primarily longitudinally over a longer period of time with established and validated \ac{HRQOL} questionnaires. In a further step, holistic observations of life quality will aim at providing meaningful statements in terms . The envisaged instrument for recording this, the so-called \ac{CHAPO} model, an approach initially developed for evaluating the quality of life of the very old (NRW80+ (Quelle?)). By adapting it to aspects of \ac{PD}-patients, the so called \acs{CHAPO-PD} model (Quelle Thieken et al. 2021) will find application in this cohort study. Thus, the aim of this project is establishing a digital \ac{QoL} monitoring system with the goal of assessing \ac{PD}-patients in a standardised way throughout the course of their disease and to evaluate their quality of life. We would like to relate the data obtained in this way to the annual follow-up cranial \ac{MRI} and the biomedical markers obtained from stool, urine, saliva, hair and blood samples. This would conceivably identify imaging or biomedical markers with predictive value for \ac{QoL}-change. In addition, this longitudinal study will include a follow-up assessment of necessary support services to improve understanding the needs of family members of \ac{PD}-patients. This should make it possible to develop a demand-oriented support offer according to the different phases of the disease. The stress experience, changes in sleep behavior and the losses in quality of life over the observation period are also included in the analysis in order to detect a surrogate for adequate support.
 
 \subsection{Geographic context}
 Approximately \SI{400000} people are diagnosed with \ac{PD} in Gernany with an incidence of \SI{84.1} per \SI{100000} patients annually [12]. The \UKGM treates up to 1500 patients. In order to understand the special recruitment peculiarities of the University Hospital of Marburg, the knowledge about the location of Marburg in Germany is essential, because Marburg is situated in the countryside in the western center of Germany with 77,129 inhabitants [18], although it is a university city and district town in Hesse. Due to its location about 77 kilometers of direct distance between the metropolitan areas of Frankfurt am Main and Kassel, the importance of the University Hospital of Marburg in the medical care of the district 70 km around Marburg is essential. To ensure patient’s access to care in the district of Marburg, the Parkinson Network Alliance Marburg (PANAMA) was created in 2016 by the Department of Neurology at the Marburg University Hospital. Within this care network different stakeholders work together to facilitate the integration of care services and improve outcomes for patients. 
 
 To represent diversity of the real-life population of PD patients in the district of the Marburg University Hospital, and to guarantee a balanced study cohort, it is intended to include all patients with parkinsonism in the district. Therefore, successfully approved recruitment strategies used in past clinical trials needed to be adopted and refined. First, the patients are directly asked to participate within their appointments in the outpatient clinic or the hospital stay in the Department of Neurology in the University Hospital Marburg. Second, the PANAMA healthcare network will bring the study to the attention of its members, so that the associated healthcare providers will further promote the study. Third, media appearance of the University Hospital will give detailed information (https://www.uni-marburg.de). Additionally, the associated caregivers are requested to participate. 
 
+\newpage
 \section{Protocol synopsis}
 \begin{tabularx}{1\textwidth}{m{3.5cm} | X}
 \toprule
@@ -225,8 +231,6 @@ To represent diversity of the real-life population of PD patients in the distric
 \midrule
 \textbf{Planned Number of Subjects} & 1000 \\
 \midrule
-\textbf{Planned Number of Subjects} & 1000 \\
-\midrule
 \textbf{Primary Endpoint} 			& \\
 \midrule
 \textbf{Secondary Endpoints} 		& \\
@@ -236,7 +240,7 @@ To represent diversity of the real-life population of PD patients in the distric
 \textbf{Study visits schedule} 		& \tabitem{Screening}\\
 							& \tabitem{Baseline Visit}\\
 							& \tabitem{Yearly follow-up}\\
-							& \tabitem{Visit at year 2042 will be teh End of Study Visit}\\
+							& \tabitem{Visit at year 2042 will be the End of Study Visit}\\
 \midrule
 \textbf{Study Duration} 			& The study will be considered complete after all subjects complete their visit in the year 2042. The total study duration is estimated to be at most 20 years. \\
 \midrule
@@ -360,7 +364,7 @@ Reasons for withdrawal include but are not limited to:
 
 * Only the MR-imaging will be discontinued during pregnancy or from the moment of an implantation onwards.
 
-Subjects may oif course withdraw at any time, with or without reason, and without prejudice to further treatment. All applicable case report forms \ac{CRF} up to the point of subject withdrawal and an ``End of Study'' form must be completed. Any subject deemed ``lost to follow-up'' should have a minimum of three documented attempts to contact him/her prior to completion of the ``End of Study'' form. Additional study data may no longer be collected after the point at which a subject has been withdrawn from the study or withdraws consent, for whatever reason. Data collected up to the point of subject withdrawal may be used. Subjects withdrawn after completing the implant procedure will not be replaced 
+Subjects may of course withdraw at any time, with or without reason, and without prejudice to further treatment. All applicable case report forms \ac{CRF} up to the point of subject withdrawal and an ``End of Study'' form must be completed. Any subject deemed ``lost to follow-up'' should have a minimum of three documented attempts to contact him/her prior to completion of the ``End of Study'' form. Additional study data may no longer be collected after the point at which a subject has been withdrawn from the study or withdraws consent, for whatever reason. Data collected up to the point of subject withdrawal may be used. Subjects withdrawn after completing the implant procedure will not be replaced 
 %% Zu Klären End of Study Form? Sollen ausgeschiedene ersetzt werden?.
 
 \subsection{Lost to follow-up}
@@ -430,7 +434,7 @@ Written informed consent must be obtained from potential study candidates and en
 \begin{itemize}
 \item Subjects will be asked to sign the \ac{ICF} before study-specific tests or procedures are performed;
 \item The idea of the study must be explained, and subjects must be given the time and opportunity to ask questions and have those questions answered to their satisfaction.
-\item The \ac{ICF} is study specific and has been approved by the\ac{EC}.
+\item The \ac{ICF} is study specific and has been approved by the \ac{EC}.
 \item Written informed consent must be recorded appropriately by means of the subject’s dated signature.
 \end{itemize}
 
@@ -439,14 +443,17 @@ Written informed consent must be obtained from potential study candidates and en
 \subsubsection{\acl{CHAPO-PD}}
 
 \subsubsection{\acl{MDS-UPDRS}}
-Der MDS-UPDRS ist ein Assessment, das zur Beurteilung verschiedener Aspekte der Parkinson-Krankheit dient, einschließlich nicht-motorischer und motorischer Symptome. Der MDS-UPDRS besteht aus vier Teilen:
-Teil I: Erfahrungen des täglichen Lebens (nicht-motorische Aspekte). Umfasst 13 Items.
-IA: Dieser Teil bezieht sich auf verschiedene Verhaltensauffälligkeiten des Patienten, die durch den Untersucher evaluiert werden.
-IB: Dieser Teil soll vom Patienten selbst ausgefüllt werden, ggf. mit Unterstützung einer Betreuungsperson, jedoch unabhängig vom Untersucher.
-Teil II: Erfahrungen des täglichen Lebens (motorische Aspekte): Dieser Teil ist ebenfalls ein Selbstbefragungsbogen, der vom Patienten ausgefüllt werden soll, ggf. mit Unterstützung einer Betreuungsperson, jedoch unabhängig vom Untersucher. Umfasst 13 Items.
-Teil III: Motorische Untersuchung: Die Instruktionen werden dem Patienten vom Untersucher vorgelesen oder direkt demonstriert-. Dieser Teil wird durch den Untersucher ausgefüllt. Umfasst 18 Items.
-Teil IV: Motorische Komplikationen: Dieser Teil enthält Instruktionen für den Untersucher und ebenfalls Instruktionen, die dem Patienten vorgelesen werden müssen. Er verbindet patientenbezogene Informationen mit klinischen Beobachtungen und Einschätzungen des Untersuchers. Teil IV wird durch den Untersucher ausgefüllt und umfasst 6 Items.
-Jedes Item wird mit 0 his 4 Punkten bewertet, wobei 0 = normal, 1 = leicht, 2 = mild, 3 = moderat und 4 = schwer ist.
+The \ac{MDS-UPDRS} evaluates various aspects of \ac{PD}-patients, including non-motor and motor symptoms. It consists of four parts:
+\begin{itemize}
+\item Part I: Experiences of daily living (non-motor symptoms), including 13 items.
+\begin{itemize}
+\item A: Behavioral problems of the patient, as evaluated by the examiner.
+\item B: Part on non-motor symptoms completed by the patient, with the assistance of a caregiver if necessary, but independent of the investigator.
+\end{itemize}
+\item Part II: Experiences of daily living (motor aspects) with 13 items. This part is also a self-report questionnaire to be completed by the patient, with the assistance of a caregiver if necessary, but independent of the investigator.
+\item Part III: Motor examination with 18 items. All instructions are read to the patient by the examiner or demonstrated directly, so that this part is completed by the examiner.
+\item Part IV: Motor Complications with 6 items. This part contains instructions for the examiner and also instructions to be read to the patient. It combines patient-related information with clinical observations and assessments by the examiner.
+\end{itemize}
 
 \subsubsection{\acl{MoCa} (\acs{MoCa})}
 \acl{MoCa} is a screening tool that can quickly identify hints on cognitive decline according to mild cognitive impairment or dementia. The entire test consists of approximately 10-minutes of questions around different domains of cognitiion. The 30 questions test cognitive abilities such as memory, language production , contextual thinking, attention and concentration, behavior, arithmetic, temporal and spatial orientation, and the ability to recognize complex shapes and patterns. The test is validated is extensively applied in clinical routine. 
@@ -563,12 +570,14 @@ Participants should be positioned comfortably and correctly to minimize motion d
 If a participant’s neck length is such that it does not permit proper positioning in the head coil, please document this on the \ac{MRI} Acquisition Document along with any other pertinent information regarding the participants scanning session.
 % Brauchen wir ein Acquisition Document?
 
+\newcolumntype{s}{>{\hsize=.45\hsize}X}
 \subsubsection{T1-weighted, 3D volumetric sequence}
 \begin{table}[H]
 \caption{Details on T1-weighted \ac{MRI}-sequence}
-\begin{tabularx}{1\textwidth}{@{}X *{1}{X}@{}}
+\begin{tabularx}{\linewidth}{@{} s | X @{}}
 \toprule
-\multicolumn{2}{l}{\textbf{T1-weighted, 3D volumetric \ac{MRI}-sequence during the \textsc{HessenKohorte}, e.g. \ac{MP-RAGE}, \ac{IR-FSPGR}}} \\
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{T1-weighted, 3D volumetric \ac{MRI}-sequence during the \textsc{HessenKohorte}, e.g. \ac{MP-RAGE}, \ac{IR-FSPGR}}} \\
+%\multicolumn{2}{l}{} \\
 \midrule
 Series description 								& 3D T1-weighted 											\\
 Plane	 									& Sagittal 												\\
@@ -589,9 +598,9 @@ Further explanations 							& The FOV must include the entire brain anatomy incl
 \subsubsection{2D Gradient-echo T2*-weighted EPI}
 \begin{table}[H]
 \caption{Details on T2-weighted \ac{MRI}-sequence}
-\begin{tabularx}{1\textwidth}{@{}X *{1}{X}@{}}
+\begin{tabularx}{\linewidth}{@{} s | X @{}}
 \toprule
-\multicolumn{2}{l}{\textbf{2D-Gradient-echo T2*-weighted \ac{EPI} (e.g., ep2d\_BOLD)}} \\
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D-Gradient-echo T2*-weighted \ac{EPI} (e.g., ep2d\_BOLD)}} \\
 \midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 Series Description                                				& rsfMRI\_RL \\
 Plane                                             					& Axial Oblique, plane parallel to AC-PC line \\
@@ -616,9 +625,9 @@ Further explanations                              				& Please instruct the part
 \subsubsection{REPEAT 2D Gradient-echo T2*-weighted EPI}
 \begin{table}[H]
 \caption{Details on REPEAT T2-weighted \ac{MRI}-sequence}
-\begin{tabularx}{1\textwidth}{@{}X *{1}{X}@{}}
+\begin{tabularx}{\linewidth}{@{} s | X @{}}
 \toprule
-\multicolumn{2}{l}{\textbf{REPEAT 2D Gradient-echo T2*-weighted \ac{EPI}}} \\
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{REPEAT 2D Gradient-echo T2*-weighted \ac{EPI}}} \\
 \midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 Series Description                                                                	& rsfMRI\_LR                                  \\
 Plane                                                                                      	& Axial Oblique, plane parallel to AC-PC line \\
@@ -640,12 +649,11 @@ Further explanations                                                            
 \end{table}
 
 \subsubsection{2D Gradient recalled echo with MT preparation}
-
 \begin{table}[H]
 \caption{Details on REPEAT T2-weighted \ac{MRI}-sequence}
-\begin{tabularx}{1\textwidth}{@{}X *{1}{X}@{}}
+\begin{tabularx}{\linewidth}{@{} s | X @{}}
 \toprule
-\multicolumn{2}{l}{\textbf{2D Gradient-echo T2*-weighted \ac{EPI} (eg ep2d\_BOLD)}} \\
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D-Gradient-echo T2*-weighted \ac{EPI} (e.g., ep2d\_BOLD)}} \\
 \midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 Series Description                                				& rsfMRI\_RL                                  \\
 Plane                                             					& Axial Oblique, plane parallel to AC-PC line \\
@@ -670,12 +678,11 @@ Further explanations                              				& Please instruct the part
 \subsubsection{2D Diffusion-weighted EPI}
 \begin{table}[H]
 \caption{Details on 2D Diffusion-weighted EPI}
-\begin{tabularx}{1\textwidth}{@{}X *{1}{X}@{}}
+\begin{tabularx}{\linewidth}{@{} s | X @{}}
 \toprule
-\multicolumn{2}{l}{\textbf{2D Gradient-echo T2*-weighted \ac{EPI} (eg ep2d\_BOLD)}} \\
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D Gradient-echo T2*-weighted \ac{EPI} (eg ep2d\_BOLD)}} \\
 \midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-2D Diffusion-weighted EPI &                                                                                      \\
-Series Description        							& \ac{DTI}\_RL (and DTI\_LR for the repeated scan with reverse PE)                          \\
+Series Description        							& \ac{DTI}\_RL (and \ac{DTI}\_LR for the repeated scan with reverse PE)                          \\
 Plane                    						 		& Straight Axial                                                                       \\
 Slice thickness (mm)      							& 2.0 with no gap                                                                      \\
 Number of Slices          							& $\sim$80                                                                             \\
@@ -697,9 +704,9 @@ Further explanations      						& Please instruct the participant to keep still 
 \subsubsection{3D T2 \ac{FLAIR} Sequence}
 \begin{table}[H]
 \caption{Details on T2-weighted \ac{FLAIR} Sequence}
-\begin{tabularx}{1\textwidth}{@{}X *{1}{X}@{}}
+\begin{tabularx}{\linewidth}{@{} s | X @{}}
 \toprule
-\multicolumn{2}{l}{\textbf{3D T2 \ac{FLAIR} Sequence}} \\
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{3D T2 \ac{FLAIR} Sequence}} \\
 \midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 Series Description        							& 3D T2 FLAIR                                                                               \\
 Plane                   	 		 					& Sagittal                                                                                  \\
