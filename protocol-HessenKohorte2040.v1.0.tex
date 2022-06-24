@@ -23,7 +23,8 @@
 \fi\fi
 \usepackage[ngerman]{babel}
 \addto{\captionsngerman}{
-  \renewcommand*\contentsname{Inhalt}}
+  \renewcommand*\contentsname{Inhalt}
+}
 \usepackage{expl3}
 \csname sys_if_shell_unrestricted:T\endcsname{\usepackage{gitver}} 
 \usepackage{pdflscape}
@@ -122,7 +123,6 @@
 \acro{BDI}[BDI]{Beck's Depression Inventory}
 \acro{CBI}[CBI]{Copenhagen Burnout Inventory}
 \acro{CISS}[CISS]{Coping Inventory for Stressful Situations}
-
 \acro{CHAPO}[CHAPO]{Challenges and Opportunities model}
 \acro{CHAPO-PD}[CHAPO]{Challenges and Opportunities for Parkinson's Disease Patients}
 \acro{CRF}[CRF]{case report form}
@@ -133,30 +133,25 @@
 \acro{GPe}[GPe]{\textit{Globus pallidus, pars externa}}
 \acro{HRQOL}[HRQOL]{health-related-quality-of-life}
 \acro{ICF}[ICF]{Informed consent form}
-
 \acro{iPS}[iPS]{idiopathic Parkinson's syndrome}
 \acro{GPi}[GPi]{\textit{Globus pallidus, pars interna}}
 \acro{MFI-20}[MFI-20]{Multidimensional Fatigue Inventory}
-
 \acro{MDS-UPDRS}[MDS-UPDRS]{Movement Disorder Society Unified Parkinson's Disease Rating Scale}
 \acro{MoCa}[MoCa]{Montréal Cognitive Assessment}
 \acro{MNI}[MNI]{Montréal Neurological Institute}
 \acro{MRI}[MRI]{Magnetic resonance imaging}
 \acro{NMSQ}[NMSQ]{Non-Motor Symptom Questionnaire}
-
 \acro{PD}[PD]{Parkinson's disease}
 \acro{PHQ}[PHQ]{Patient Health Questionnaire}
 \acro{PDCB}[PDCB]{Parkinson’s disease caregiver burden Questionnaire PDCB}
 \acro{PPMI}[PPMI]{Parkinson's Progressive Marker Initiative}
 \acro{PSS}[PSS]{Perceived Stress Scale}
-
 \acro{QoL}[QoL]{Quality-of-Life}
 \acro{SNc}[SNc]{\textit{Substantia nigra, pars compacta}}
 \acro{STN}[STN]{\textit{Nucleus subthalamicus}}
 \acro{TE}[TE]{\textit{echo time}}
 \acro{TI}[TI]{\textit{inversion time}}
 \acro{TR}[TR]{\textit{repetition time}}
-
 \acro{WHOQoL}[WHOQoL]{World Health Organization Quality of Life}
 \acro{ZBI-22}[ZBI-22]{Zarit Burden Interview}
 \end{acronym}
@@ -244,7 +239,7 @@ To represent diversity of the real-life population of PD patients in the distric
 \midrule
 \textbf{Study Duration} 			& The study will be considered complete after all subjects complete their visit in the year 2042. The total study duration is estimated to be at most 20 years. \\
 \midrule
-\textbf{Inclusion criteria \ac{PD}-patients}& \tabitem{Patients suffering from a clinical diagnosis of idiopathic Parkinson's syndrome according to the recent clinical diagnostic criteria (Quelle Postuma)} \\
+\textbf{Inclusion criteria \ac{PD}-patients}& \tabitem{Patients with a clinical diagnosis of idiopathic Parkinson's syndrome according to the recent clinical diagnostic criteria (Quelle Postuma)} \\
 							& \tabitem{\ac{iPS}-stages of I - IV according to the Hoehn \& Yahr scale (without medication, i.e. in the OFF stage) (Quelle Hoehn und Yahr 1967).} \\
 & \tabitem{Patients aged between between 30 and 100 years} \\
 							& \tabitem{Patients with the ability to provide informed consent. In cases where participants lose their capacity to consent at follow-up visits (e.g., due to dementia, etc.), this participant will only be allowed to continue if a legal representative (proxy, guardian) provides informed consent to further participation on behalf of the participant. In this case, the legal representatives will be provided with a separate consent form.} \\
@@ -256,23 +251,26 @@ To represent diversity of the real-life population of PD patients in the distric
 							& \tabitem{Women who are pregnant will not receive MR imaging.}\\
 							& \tabitem{Subjects who do not want to be informed about possible incidental findings are also not allowed to participate in the imaging part of the study.}\\
 \midrule
-\textbf{Inclusion criteria \ac{PD}-patients' relatives}& \tabitem{Patients suffering from a clinical diagnosis of idiopathic Parkinson's syndrome according to the recent clinical diagnostic criteria (Quelle Postuma)} \\
-							& \tabitem{\ac{iPS}-stages of I - IV according to the Hoehn \& Yahr scale (without medication, i.e. in the OFF stage) (Quelle Hoehn und Yahr 1967).} \\
-& \tabitem{Patients aged between between 30 and 100 years} \\
-							& \tabitem{Patients with the ability to provide informed consent. In cases where participants lose their capacity to consent at follow-up visits (e.g., due to dementia, etc.), this participant will only be allowed to continue if a legal representative (proxy, guardian) provides informed consent to further participation on behalf of the participant. In this case, the legal representatives will be provided with a separate consent form.} \\
-							& \tabitem{Patients with a good knowledge of German} \\
+\textbf{Inclusion criteria \ac{PD}-patients' relatives} & \tabitem{Relatives of patients included in the study according to the abovementioned criteria} \\
+                                                        & \tabitem{Relatives with the ability to give informed consent} \\
+							& \tabitem{Relatives with a good knowledge of German} \\
 \midrule
-\textbf{Exclusion criteria \ac{PD}-patients' relatives}& \tabitem{Patients suffering from a clinical diagnosis of atypic Parkinson's syndrome in a first instance. Patient's enrolled who were later characterized as atypical Parkinson syndroms will not be excluded.}\\
-							& \tabitem{\ac{iPS}-stages of V according to the Hoehn \& Yahr scale (without medication, i.e. in the OFF stage) (Quelle Hoehn und Yahr 1967)}\\
-							& \tabitem{The use of magnetic fields in the MRI examination excludes the participation of persons who have electrical devices (e.g. cardiac pacemakers, medication pumps, etc.) or metal parts (e.g. screws after bone fracture) in or on their bodies.}\\
-							& \tabitem{Women who are pregnant will not receive MR imaging.}\\
-							& \tabitem{Subjects who do not want to be informed about possible incidental findings are also not allowed to participate in the imaging part of the study.}\\
+\textbf{Exclusion criteria \ac{PD}-patients' relatives} & Relatives who are unable to give informed consent can't be included in the study \\
 \midrule
 
 
-\textbf{Statistical methods} 		& \\
-\textbf{Primary Statistical Hypothesis}& \\
-\textbf{Statistical test method} 		& \\
+\textbf{Statistical methods}
+&
+  \tabitem{lorem ipsum}
+\\
+\textbf{Primary Statistical Hypothesis}
+&
+  \tabitem{\ac{PD} patients quality of life correlates with the well being of their relatives}
+\\
+\textbf{Statistical test method}
+&
+  \tabitem{Linear regression}
+\\
 \textbf{Sample Size Parameters} 		& \\
 \bottomrule
 \end{tabularx}
@@ -287,7 +285,7 @@ The \textsc{HessenKohorte} Study is a prospective 20-year cohort study. The \tex
 \subsection{Scale and duration}
 The study will accompany up to 1000 patients over as much as 20 years in order to enable a good insight into the course of the individual patients and their relatives.
 \subsection{Justification for study design}
-This study is a single-center prospective and longitudinal cohort study to monitor \ac{PD}-patients development over the course and particularly to assess their quality of life in a holistic approach. The comparatively large number of subjects will enable a better insight into \ac{PD} with its multifacetted phenotypes
+This study is a single-center prospective and longitudinal cohort study to monitor \ac{PD}-patients development over the course of the disease and particularly to assess their quality of life in a holistic approach. The comparatively large number of subjects will enable a better insight into \ac{PD} with its multifacetted phenotypes
 
 \section{Subject selection}
 \label{sec:study_selection}
@@ -303,7 +301,6 @@ Subjects who meet all of the following criteria (cf. Table \ref{}) may be given 
 \begin{itemize}
 \item Patients suffering from a clinical diagnosis of idiopathic Parkinson's syndrome according to the recent clinical diagnostic criteria (Quelle Postuma).
 \item \ac{iPS}-stages of I - IV according to the Hoehn \& Yahr scale (without medication, i.e. in the OFF stage) (Quelle Hoehn und Yahr 1967).
-\item Patients aged between between 30 and 100 years
 \item Patients with the ability to provide informed consent. In cases where participants lose their capacity to consent at follow-up visits (e.g., due to dementia, etc.), this participant will only be allowed to continue if a legal representative (proxy, guardian) provides informed consent to further participation on behalf of the participant. In this case, the legal representatives will be provided with a separate consent form.   
 \item Patients with a good knowledge of German
 \end{itemize}
@@ -326,11 +323,9 @@ Subjects who meet any one of the following criteria (cf. Table \ref{}) cannot be
 Subjects who meet all of the following criteria (cf. Table \ref{}) may be given consideration for inclusion in this cohort study, provided no exclusion criteria (cf. Section \ref{sec:exclusion_criteriaREL}) are met.
 
 \begin{itemize}
-\item Patients suffering from a clinical diagnosis of idiopathic Parkinson's syndrome according to the recent clinical diagnostic criteria (Quelle Postuma).
-\item \ac{iPS}-stages of I - IV according to the Hoehn \& Yahr scale (without medication, i.e. in the OFF stage) (Quelle Hoehn und Yahr 1967).
-\item Patients aged between between 30 and 100 years
-\item Patients with the ability to provide informed consent. In cases where participants lose their capacity to consent at follow-up visits (e.g., due to dementia, etc.), this participant will only be allowed to continue if a legal representative (proxy, guardian) provides informed consent to further participation on behalf of the participant. In this case, the legal representatives will be provided with a separate consent form.   
-\item Patients with a good knowledge of German
+  \item Relatives of patients included in the study according to the abovementioned criteria 
+  \item Relatives with the ability to give informed consent 
+  \item Relatives with a good knowledge of German 
 \end{itemize}
 
 % Create a table with exclusion criteria with 2 columns, {num_IC} rows  with bulletpoints and a caption to be referred to
@@ -338,11 +333,7 @@ Subjects who meet all of the following criteria (cf. Table \ref{}) may be given 
 \label{sec:exclusion_criteriaREL}
 Subjects who meet any one of the following criteria (cf. Table \ref{}) cannot be included or will be excluded from this cohort study.
 \begin{itemize}
-\item Patients suffering from a clinical diagnosis of atypic Parkinson's syndrome in a first instance. Patient's enrolled who were later characterized as atypical Parkinson syndroms will not be excluded.
-\item \ac{iPS}-stages of V according to the Hoehn \& Yahr scale (without medication, i.e. in the OFF stage) (Quelle Hoehn und Yahr 1967).
-\item The use of magnetic fields in the MRI examination excludes the participation of persons who have electrical devices (e.g. cardiac pacemakers, medication pumps, etc.) or metal parts (e.g. screws after bone fracture) in or on their bodies. 
-\item Women who are pregnant will not receive \ac{MRI} scans.
-\item Subjects who do not want to be informed about possible incidental findings are also not allowed to participate in the imaging part of the study.
+  \item  Relatives who are unable to give informed consent can't be included in the study
 \end{itemize}
 
 
@@ -356,10 +347,10 @@ All subjects enrolled in the \textsc{HessenKohorte} (including those withdrawn f
 
 Reasons for withdrawal include but are not limited to:
 \begin{itemize}
-\item subject or relative choice to withdraw consent,
-\item lost to follow-up,
-\item pregnancy*,
-\item implantation of electrical devices or metal parts in or on the body *
+  \item subject or relative choice to withdraw consent
+  \item lost to follow-up
+  \item pregnancy*
+  \item implantation of electrical devices or metal parts in or on the body *
 \end{itemize}
 
 * Only the MR-imaging will be discontinued during pregnancy or from the moment of an implantation onwards.
@@ -382,8 +373,8 @@ The study is considered complete when 20 years from the first enrolment are over
 \subsection{Data collection}
 The data collection schedule is shown in Table \ref{}
 \newpage
-\begin{landscape}
-\begin{table}
+%\begin{landscape}
+\begin{table}[H]
 \caption{Data Collection Schedule for \ac{PD}-patients enrolled in the \textsc{HessenKohorte}}
 \begin{tabularx}{1\textwidth}{@{}X *{6}{C}@{}}
 \toprule
@@ -405,7 +396,7 @@ Stool sample				& \multicolumn{2}{c}{X}							&						& X								&							\\
 \end{table}
 \newpage
 
-\begin{table}
+\begin{table}[H]
 \caption{Data Collection Schedule for patients' relatives enrolled in the \textsc{HessenKohorte}}
 \begin{tabularx}{1\textwidth}{@{}X *{6}{C}@{}}
 \toprule
@@ -423,7 +414,7 @@ Stool sample				& \multicolumn{2}{c}{X}							&						& X								&							\\
 \multicolumn{6}{l}{\footnotesize{*may be ascertained and entered into database}}
 \end{tabularx}
 \end{table}
-\end{landscape}
+%\end{landscape}
 
 \subsection{Candidate Screening}
 \label{subsec:screening}
