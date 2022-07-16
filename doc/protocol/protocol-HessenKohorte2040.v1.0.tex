@@ -1,0 +1,32 @@
+% define document
+\documentclass[
+	a4paper, 
+	11.5pt,
+	headings=small, 
+	twoside, 
+	titlepage=firstiscover, 
+ 	pagesize=auto,
+  	version=last,
+	open=any,
+	BCOR=14mm,
+  	chapterprefix=false]{scrbook}
+\setkomafont{sectioning}{\rmfamily}
+\usepackage{bookman}
+\usepackage{gitfile-info}
+\KOMAoptions{DIV=14}
+
+% include all the preambel stuff, loaded packages, command definitions etc.
+\usepackage{hk40preambel}
+
+% provide pdf metadata
+\hypersetup{
+	pdftitle={Protocol - HessenKohorte, Neurology Department, Philipps-University Marburg},
+	pdfsubject={Hessenkohorte Protocol},
+	pdfauthor={PD Dr. med. David J. Pedrosa},
+	pdfkeywords={Parkinson's disease, cohort study, hassia, quality-of-life}
+}
+
+% main document
+\begin{document}
+  \input{body.tex}
+\end{document}
