@@ -248,6 +248,9 @@ TSWLatexianTemp*
 *.bak
 *.sav
 
+# Emacs
+*.*~
+
 # Texpad
 .texpadtmp
 

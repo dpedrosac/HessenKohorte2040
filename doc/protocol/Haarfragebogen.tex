@@ -1,0 +1,87 @@
+\begin{center}
+{\Large \textbf{Haarfragebogen}}
+\end{center}
+\vspace*{1cm}
+
+\newcommand{\urule}[1]{\rule{#1}{0.15mm}}
+\newcommand{\hfsection}[1]{\vspace*{5mm}\noindent\large \textbf{#1}}
+\newcommand{\abox}[1]{\framebox[5mm][l]{\phantom{X}} #1}
+
+\newcommand{\hfitemone}[1]{
+  \begin{tabular}{@{}p{0.15\textwidth}lp{0.65\textwidth}}
+    #1 & \abox{nein} \abox{ja} $\Rightarrow$ & Wann (letzte): \\
+    && Produkt: \\
+  \end{tabular}
+}
+\newcommand{\hfitemtwo}[1]{
+  \begin{tabular}{@{}p{0.15\textwidth}lp{0.65\textwidth}}
+    #1 & \abox{nein} \abox{ja} $\Rightarrow$ & Wann (letzte): \\
+  \end{tabular}
+}
+\newcommand{\hfitemthree}[3]{
+  \begin{tabular}{@{}p{0.15\textwidth}lp{0.65\textwidth}}
+    #1 & \abox{nein} \abox{ja} $\Rightarrow$ & #2 \\
+    && #3 \\
+  \end{tabular}
+}
+\newcommand{\hfitemfour}[1]{
+  \begin{tabular}{@{}p{0.3\textwidth}lll}
+    #1 & \abox{nein} \abox{ja} $\Rightarrow$ & \urule{1cm} x/Woche & Produkt: \\
+    & & & \\
+  \end{tabular}
+} 
+
+
+Pseudonym:\urule{4cm} \hspace{\fill}
+Datum (Tag/Monat/Jahr/): \urule{0.5cm}/\urule{0.5cm}/\urule{1cm}
+
+\hfsection{Allgemeines}
+
+   Geschlecht: \abox{männlich} \abox{weiblich} \abox{anders:}\urule{3cm}\smallskip
+   
+   Alter (Jahre): \urule{3cm}\smallskip
+
+   Größe (Meter): \urule{3cm}\smallskip
+
+   Gewicht (Kilogramm): \urule{3cm}\smallskip
+
+\hfsection{Allgemeine Haarmerkmale}
+
+   natürliche Haarfarbe: \urule{3cm}\smallskip
+
+   natürliche Haarstruktur: \abox{glatt} \abox{gewellt} \abox{gelockt}\smallskip
+
+\hfsection{Kosmetische Behandlung}
+
+   Häufigkeit der Haarwäsche (x/Woche): \urule{3cm}\bigskip
+
+   \hfitemone{Färbung}
+   
+   \hfitemone{Blondierung}
+   
+   \hfitemone{Tönung}
+   
+   \hfitemone{Henna}
+   
+   \hfitemone{Strähnchen}\vspace*{-2mm} 
+
+   \hfitemtwo{Dauerwelle}
+
+   \hfitemthree{Glättung}{Glätteisen:\urule{1cm}x/Woche}{chemische Glättung: wann (letzte):}
+
+\newpage   
+\hfsection{Haarprodukte}
+
+   \hfitemfour{Haarshampoo}
+
+   \hfitemfour{Haarspülung}
+   
+   \hfitemfour{Haargel}
+
+   \hfitemfour{Haarspray}
+
+   \hfitemfour{Haarschaum}
+
+   \hfitemfour{Sonstiges (z.B. Kopfsalbe)
+               \phantom{Sonstiges (z.B. Kopfsalbe)}
+               \urule{4.5cm}}
