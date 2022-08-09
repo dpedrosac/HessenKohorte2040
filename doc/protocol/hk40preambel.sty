@@ -55,11 +55,12 @@
 
 \usepackage{anyfontsize}
 \setkomafont{chapter}{\normalfont\Large}
-\renewcommand*{\chapterheadstartvskip}{\vspace*{.80\baselineskip}}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{.8\baselineskip}}
 \renewcommand*{\chapterheadendvskip}{\vspace*{.5\baselineskip}}
 \renewcommand*{\chapterformat}{%
   {\fontsize{25}{30}\scshape\chapappifchapterprefix{}}%
-  \fontsize{64}{30}\selectfont\rlap{\thechapter\autodot}%
+  \fontsize{64}{30}\selectfont\rightline{\thechapter\autodot}
+  \hspace{-4.5cm}%
 }
 \renewcommand*{\raggedchapter}{\raggedleft}
 
@@ -80,6 +81,8 @@
 	
 \usepackage{lipsum}  
 \usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{titlesec}
 
 \newcolumntype{d}[1]{D..{#1}}
 \newcolumntype{C}{>{\centering\arraybackslash}X}

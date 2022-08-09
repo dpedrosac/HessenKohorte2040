@@ -1,0 +1,37 @@
+\chapter{Appendix}
+% TODO: 
+% Metallanamnesebogen
+% Bogen für Probandenuntersuchungen
+% Master Log
+% Screening Log
+% Subject Visit Log
+% Informed Consent Log
+% Biobank Telephone contact form
+% Third parties telefone contact form
+
+
+% re-define the section
+\titleformat{\section}
+{\clearpage\null\vfil\bfseries\Huge}
+{\filright\thesection}
+{1em}
+{\filright\Huge}
+[\vfil\newpage]
+
+\section{Informed consent form for patients}
+\includepdf[pages=-]{informed_consent_patient.pdf}
+
+\section{Informed consent form for relatives}
+\includepdf[pages=-]{informed_consent_relative.pdf}  
+
+\pagestyle{plain}
+
+\section{SOP head hair sample extraction}
+\setcounter{page}{1}
+\input{SOP_Haarprobe.tex}
+
+\section{SOP blood sample extraction}
+\setcounter{page}{1}
+\include{SOP_Biobank}
+\setcounter{page}{1}
+\include{SOP_Blutbild_Anmeldung_Zentrallabor}
