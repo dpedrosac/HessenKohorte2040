@@ -1,8 +1,12 @@
 \chapter*{Abbreviations}
+\let\oldbaselinestretch=\baselinestretch%
+\renewcommand{\baselinestretch}{1}%
+\large\normalsize%
 \phantomsection
 \thispagestyle{plain}
 \begin{multicols}{2}
 \begin{acronym}
+\setlength{\parskip}{0ex}
 \acro{BDI}[BDI]{Beck's Depression Inventory}
 \acro{CBI}[CBI]{Copenhagen Burnout Inventory}
 \acro{CISS}[CISS]{Coping Inventory for Stressful Situations}
@@ -16,7 +20,7 @@
 \acro{GPe}[GPe]{\textit{Globus pallidus, pars externa}}
 \acro{HRQOL}[HRQOL]{health-related-quality-of-life}
 \acro{ICF}[ICF]{Informed consent form}
-\acro{iPS}[iPS]{idiopathic Parkinson's syndrome}
+\acro{iPD}[iPD]{idiopathic Parkinson's disease}
 \acro{GPi}[GPi]{\textit{Globus pallidus, pars interna}}
 \acro{MFI-20}[MFI-20]{Multidimensional Fatigue Inventory}
 \acro{MDS-UPDRS}[MDS-UPDRS]{Movement Disorder Society Unified Parkinson's Disease Rating Scale}
@@ -38,4 +42,6 @@
 \acro{WHOQoL}[WHOQoL]{World Health Organization Quality of Life}
 \acro{ZBI-22}[ZBI-22]{Zarit Burden Interview}
 \end{acronym}
+\renewcommand{\baselinestretch}{\oldbaselinestretch}%
+\large\normalsize%
 \end{multicols}
