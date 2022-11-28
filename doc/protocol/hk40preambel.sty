@@ -86,6 +86,13 @@
 
 \usepackage{lipsum}  
 \usepackage{hyperref}
+\hypersetup{
+    pdfborderstyle={/S/U/W 1}, % underline links instead of boxes
+    linkbordercolor=red,       % color of internal links
+    citebordercolor=green,     % color of links to bibliography
+    filebordercolor=magenta,   % color of file links
+    urlbordercolor=cyan        % color of external links
+}
 
 \urlstyle{same}
 \usepackage{amsmath}
@@ -94,9 +101,12 @@
 %\usepackage{titlesec}
 \usepackage[raggedright]{titlesec}	
 \usepackage[standardsections]{scrhack}
+\usepackage{footmisc}
+\usepackage{tablefootnote} 
 
 \newcolumntype{d}[1]{D..{#1}}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \newcommand\mc[1]{\multicolumn{1}{C}{#1}} % shortcut macro
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} % TODO what is this?
 \newcommand{\UKGM}[1]{University Hospital of Gießen and Marburg}
+\cfoot{Hessenkohorte Protocol version: \input{major_version.txt}\unskip.\input{minor_version.txt}}
