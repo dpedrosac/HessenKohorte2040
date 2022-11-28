@@ -1,9 +1,15 @@
 #!/bin/bash
+
+# cleanup before compilation
 rm *.aux
 rm *.log
 rm *.out
 
-pdflatex protocol-HessenKohorte2040.v1.0.tex
-bibtex protocol-HessenKohorte2040.v1.0.aux
-pdflatex protocol-HessenKohorte2040.v1.0.tex
-pdflatex protocol-HessenKohorte2040.v1.0.tex
+# create file for storing the minor version number
+git rev-list --count main > minor_version.txt
+
+# compile document
+pdflatex protocol-HessenKohorte2040.tex
+bibtex protocol-HessenKohorte2040.aux
+pdflatex protocol-HessenKohorte2040.tex
+pdflatex protocol-HessenKohorte2040.tex
