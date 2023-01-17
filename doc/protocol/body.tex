@@ -562,7 +562,7 @@ Voxel size (mm) 								& 1.0 $\times$ 1.0 mm in plane resolution \\
 Phase encode direction 						& Anterior Posterior (AP) 			\\
 Matrix										& 256 $\times$ 256 (the use of interpolation, zero-filling or a ZIP factor is not permitted)\\
 TR/TE/FA/ other parameters 					& Will be defined by Invicro according to the scanner\\
-FoV		 									& 256 mm (full FoV required, no rectangular FoV)\\
+\ac{FOV}		 								& 256 mm (full FoV required, no rectangular FoV)\\
 Scan time 									& $\sim$ 7 min\\
 Further explanations 							& The FOV must include the entire brain anatomy including the vertex, cerebellum and pons. Slices should be oblique sagittal, angled along the longitudinal fissure on both the axial and coronal localizers. To avoid artifacts, position the participant such that there is sufficient empty space around the head: approximately 1.5 cm of air or more above the top of the head, and leave 3 - 4 blank slices on either side of the head. Avoid nose ghosting.\\
 \bottomrule
@@ -585,7 +585,7 @@ Slice thickness (mm)                              				& 3.5 with no gap \\
 Number of Slices                                  				& $\sim$40 \\
 Phase encode dir.                                 				& R \textgreater{}\textgreater L\\
 Matrix                                            					& 64 $\times$ 64 \\
-FOV                                               						& 224 $\times$ 224 mm \\
+\ac{FOV}                                               					& 224 $\times$ 224 mm \\
 Repetition Time (ms)                              				& 2500 \\
 Echo Time (ms)                                    				& 30 \\
 Flip angle                                        					& 80 \\
@@ -593,36 +593,38 @@ Slice order                                       					& Interleaved \\
 Number of measurements                            			& 240 (10 min total scan time) \\
 In-plane acceleration                             				& GRAPPA or SENSE (factor of 2) \\
 Instructions                                      					& Keep the eyes open and remain still \\
-Scan Time                                         					& $\sim$10 min \\
+Scan Time                                         					& $\sim$\SI{10}{\minute}\\
 Further explanations                              				& Please instruct the participant to keep their eyes open during the entire scan. You can instruct them to focus on a point on the mirror or scanner. Check with the participant immediately after the scan to verify they kept their eyes open and did not fall asleep. No audio or video presentation should be made during the scan.Position the axial resting state fMRI slices along the AC-PC plane with care that there is one slice above the vertex, and then cover the rest of the brain and as much of the cerebellum as possible with the remaining slices. The slices should be centered in the axial plane to prevent aliasing in the Anterior/Posterior direction (see Figure 4 ??). \ac{TR}/\ac{TE} should not be changed. \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\subsubsection{REPEAT 2D Gradient-echo T2*-weighted EPI}
+\subsubsection{2D Gradient recalled echo with MT preparation}
 \begin{table}[H]
-\caption{Details on REPEAT T2-weighted \ac{MRI}-sequence}
+\caption{Details on Gradient recalled echo sequence with MT preparation}
 \small
 \setstretch{1}
 \begin{tabularx}{\linewidth}{@{} s | X @{}}
 \toprule
-\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{REPEAT 2D Gradient-echo T2*-weighted \ac{EPI}}} \\
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D Gradient recalled echo with MT preparation}} \\
 \midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-Series Description                                                                	& rsfMRI\_LR                                  \\
-Plane                                                                                      	& Axial Oblique, plane parallel to AC-PC line \\
-Slice thickness (mm)                                                          	& 3.5 with no gap                             \\
-Number of Slices                                                      		& $\sim$40                                    \\
-Phase encode dir.                                                                 	& L \textgreater{}\textgreater R              \\
-Matrix                                                                                     	& 64 $\times$ 64                                       \\
-FOV                                                                                        	& 224 $\times$ 224 mm                                \\
-Repetition Time (ms)                                                             & 2500                                        \\
-Echo Time (ms)                                                                        & 30                                          \\
-Flip angle                                                                                 	& 80                                          \\
-Slice order 									& Interleaved                                 \\
-Number of measurements                                                  & 10 (25 sec total scan time)                 \\
-In-plane acceleration                                                             & GRAPPA or SENSE (factor of 2)               \\
-Instructions									& Keep the eyes open and remain still         \\
-Further explanations                                                             & Repeat the above scan with the phase encoding direction updated to L >> R, and the number of measurements updated to “10”. All other parameters should be held constant. Recommended imaging parameters for the repeat resting state fMRI sequence can be referenced in Table 6.                                            \\
+Series Description                                                                	& 2D GRE-MT                                  			\\
+Plane                                                                                      	& Oblique, follow instructions \\
+Slice thickness (mm)                                                          	& \SI{1.5}{\milli\metre} 	\\
+Number of Slices                                                      		& \num{16}                                    \\
+Phase encode dir.                                                                 	& Right-Left (RL)              \\
+Matrix                                                                                     	& 440 $\times$ 440                                       \\
+\ac{FOV}                                                                                  	& \num{220} $\times$ \SI{220}{\milli\metre}				\\
+Voxel Size (mm)                                                             		& \num{.5} $\times$ \num{.5} $\times$ \num{1.5}		\\
+Repetition time (ms)                                                            	& \SI{465}{\milli\second}\\
+Echo Time (ms)                                                                        & Minimum ( smaller than \SI{5}{\milli\second})                                          \\
+Flip angle                                                                                 	& 40                                          \\
+MT Pulse FA									& 300 					\\
+MT offset Frequency FA						& \SI{1.5}{\kilo\hertz} (3.0 T)\\
+MT pulse duration 								& \SI{10}{\milli\second}\\
+Number of measurements                                                  & 5 (ca. 10 minutes total scan time)                 \\
+Receive BAnd Width 							& smaller than 500 Hz/Pixel 	\\
+Further explanations                                                             & See Figure 5 in PPMI Manual for step by step instruction on selecting the FOV.\\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -636,21 +638,21 @@ Further explanations                                                            
 \toprule
 \multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D-Gradient-echo T2*-weighted \ac{EPI} (e.g., ep2d\_BOLD)}} \\
 \midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-Series Description                                				& rsfMRI\_RL                                  \\
-Plane                                             					& Axial Oblique, plane parallel to AC-PC line \\
-Slice thickness (mm)                              				& 3.5 with no gap                             \\
-Number of Slices                                  				& $\sim$40                                    \\
-Phase encode dir.                                 				& R \textgreater{}\textgreater L              \\
-Matrix                                            					& 64 $\times$ 64                                       \\
-FOV                                               						& 224 $\times$ 224 mm                                \\
-Repetition Time (ms)                              				& 2500                                        \\
-Echo Time (ms)                                    				& 30                                          \\
-Flip angle                                        					& 80                                          \\
-Slice order                                       					& Interleaved                                 \\
-Number of measurements                            			& 240 (10 min total scan time)                \\
-In-plane acceleration                             				& GRAPPA or SENSE (factor of 2)               \\
-Instructions                                      					& Keep the eyes open and remain still         \\
-Scan Time                                         					& $\sim$10 minutes                            \\
+Series Description                                				& rsfMRI\_RL                                  				\\
+Plane                                             					& Axial Oblique, plane parallel to AC-PC line 	\\
+Slice thickness (mm)                              				& 3.5 with no gap                             				\\
+Number of Slices                                  				& $\sim$40                                    				\\
+Phase encode dir.                                 				& R \textgreater{}\textgreater L            	 	\\
+Matrix                                            					& 64 $\times$ 64                                       			\\
+\ac{FOV}                                               					& 224 $\times$ 224 mm                                		\\
+Repetition Time (ms)                              				& \num{2500}                                        			\\
+Echo Time (ms)                                    				& 30                                          					\\
+Flip angle                                        					& 80                                          					\\
+Slice order                                       					& Interleaved                                 				\\
+Number of measurements                            			& 240 (\SI{10}{\minute} total scan time)       	\\
+In-plane acceleration                             				& GRAPPA or SENSE (factor of 2)               		\\
+Instructions                                      					& Keep the eyes open and remain still         		\\
+Scan Time                                         					& $\sim$ \SI{10}{\minute}					\\
 Further explanations                              				& Please instruct the participant to keep their eyes open during the entire scan. You can instruct them to focus on a point on the mirror or scanner. Check with the participant immediately after the scan to verify they kept their eyes open and did not fall asleep. No audio or video presentation should be made during the scan.                                           
 \end{tabularx}
 \end{table}
@@ -663,23 +665,23 @@ Further explanations                              				& Please instruct the part
 \setstretch{1}
 \begin{tabularx}{\linewidth}{@{} s | X @{}}
 \toprule
-\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D Gradient-echo T2*-weighted \ac{EPI} (eg ep2d\_BOLD)}} \\
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D Diffusion-weighted EPI}} \\
 \midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 Series Description        							& \ac{DTI}\_RL (and \ac{DTI}\_LR for the repeated scan with reverse PE)                          \\
 Plane                    						 		& Straight Axial                                                                       \\
-Slice thickness (mm)      							& 2.0 with no gap                                                                      \\
-Number of Slices          							& $\sim$80                                                                             \\
-Phase encode dir.         							& R \textgreater{}\textgreater L                                                       \\
-Matrix                    								& 128 $\times$ 128*                                                                             \\
-FOV                       								& 256 $\times$ 256 mm                                                                           \\
-Repetition Time (ms)      						& $\sim$ \num{10000}                                                                         \\
-Echo Time (ms)            							& $\sim$80                                                                             \\
-Flip angle                								& 90                                                                                   \\
-Slice order               								& Interleaved                                                                          \\
-Number of directions      						& 32                                                                                   \\
-b-VALUE                   								& 0 and 1000 \textsuperscript{s}/\textsubscript{mm\textsuperscript{2}} (B=0 images interleaved throughout if possible in product sequence) \\
-Instructions              							& Keep still                                                                           \\
-Scan Time                 								& $\sim$8 minutes                                                                      \\
+Slice thickness (mm)      							& 2.0 with no gap                                                                    \\
+Number of Slices          							& $\sim$80                                                                             	\\
+Phase encode dir.         							& R \textgreater{}\textgreater L                                       \\
+Matrix                    								& 128 $\times$ 128*                                                             \\
+\ac{FOV}                       							& 256 $\times$ 256 mm                                                       \\
+Repetition Time (ms)      						& $\sim$ \num{10000}                                                          \\
+Echo Time (ms)            							& $\sim$80                                                                             	\\
+Flip angle                								& 90                                                                                   		\\
+Slice order               								& Interleaved                                                                          	\\
+Number of directions      						& 32                                                                                   		\\
+b-VALUE                   								& 0 and 1000 \textsuperscript{s}/\textsubscript{mm\textsuperscript{2}} (B=0 images interleaved throughout if possible in product sequence) 									\\
+Instructions              							& Keep still                                                                           	\\
+Scan Time                 								& $\sim$ \SI{8}{\minute} 						\\
 Further explanations      						& Please instruct the participant to keep still during the entire scan. \ac{DTI} should be acquired with 32 directions. Slices should cover top of the brain down to base of cerebellum. Two sequences with reversed phase encoding direction should be acquired in full to correct for susceptibility induced distortions. If acquiring a phantom scan, only one sequence with reverse phase encoding direction should be acquired                                                                                     
 \end{tabularx}
 \end{table}
@@ -691,19 +693,19 @@ Further explanations      						& Please instruct the participant to keep still 
 \setstretch{1}
 \begin{tabularx}{\linewidth}{@{} s | X @{}}
 \toprule
-\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{3D T2 \ac{FLAIR} Sequence}} \\
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{3D T2 \ac{FLAIR} Sequence}} 		\\
 \midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-Series Description        							& 3D T2 FLAIR                                                                               \\
-Plane                   	 		 					& Sagittal                                                                                  \\
-Slice thickness (mm)      							& 1.0 – 1.2 (slice thickness must remain consistent)                                        \\
-Number of slices          							& 192 (please adjust slice thickness up to 1.2 mm to cover brain, not the number of slices) \\
-Voxel size (mm)           							& 1.0 $\times$ 1.0 mm in plane resolution                                                            \\
-Phase encode dir.         							& Anterior-Posterior (AP)                                                                   \\
-Matrix                    								& 256 $\times$ 256 (the use of interpolation, zero-filling or a ZIP factor is not permitted)       \\
-TR/TE/FA/other parameters 					& Will be defined by Invicro according to the scanner                                       \\
-FOV                       								& 256 mm (full FOV required, no rectangular FOV)                                            \\
-Scan Time                 								& $\sim$7 minutes                                                                           \\
-Further explanations      						&  The FOV must include the entire brain anatomy including the vertex, cerebellum and pons. To avoid artifacts, position the participant such that there is sufficient empty space around the head: approximately 1.5 cm of air or more above the top of the head, and leave 1 - 2 blank slices on top of the head. Avoid nose ghosting.                                                                                        
+Series Description        							& 3D T2 FLAIR                                                                               		\\
+Plane                   	 		 					& Sagittal                                                                                  			\\
+Slice thickness (mm)      							& 1.0 -- 1.2 (slice thickness must remain consistent)                      \\
+Number of slices          							& 192 (please adjust slice thickness up to \SI{1.2}{\milli\metre} to cover brain, not the number of slices) 																							\\
+Voxel size (mm)           							& 1.0 $\times$ 1.0 mm in plane resolution                                       \\
+Phase encode dir.         							& Anterior-Posterior (AP)                                                                   	\\
+Matrix                    								& 256 $\times$ 256 (the use of interpolation, zero-filling or a ZIP factor is not permitted)       																					 	\\
+TR/TE/FA/other parameters 					& Will be defined by Invicro according to the scanner                  \\
+\ac{FOV}                       							& \SI{256}{\milli\metre} (full \ac{FOV} required, no rectangular \ac{FOV})	\\
+Scan Time                 								& $\sim$\SI{7}{\minute}									\\
+Further explanations      						&  The FOV must include the entire brain anatomy including the vertex, cerebellum and pons. To avoid artifacts, position the participant such that there is sufficient empty space around the head: approximately \SI{1.5}{\centi\metre} of air or more above the top of the head, and leave 1 -- 2 blank slices on top of the head. Avoid nose ghosting.                                                                                        
 \end{tabularx}
 \end{table}
 
