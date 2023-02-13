@@ -1,0 +1,29 @@
+\begin{table}[H]
+\caption{Details on Gradient recalled echo sequence with MT preparation}
+\small
+\setstretch{1}
+\begin{tabularx}{\linewidth}{@{} s | X @{}}
+\caption{Details on REPEAT T2-weighted \ac{MRI}-sequence}\\
+\toprule
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D Gradient recalled echo with MT preparation}} \\
+\midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+Series Description                                                                	& 2D GRE-MT                                  			\\
+Plane                                                                                      	& Oblique, follow instructions \\
+Slice thickness (mm)                                                          	& \SI{1.5}{\milli\metre} 	\\
+Number of Slices                                                      		& \num{16}                                    \\
+Phase encode dir.                                                                 	& Right-Left (RL)              \\
+Matrix                                                                                     	& 440 $\times$ 440                                       \\
+\ac{FOV}                                                                                  	& \num{220} $\times$ \SI{220}{\milli\metre}				\\
+Voxel Size (mm)                                                             		& \num{.5} $\times$ \num{.5} $\times$ \num{1.5}		\\
+Repetition time (ms)                                                            	& \SI{465}{\milli\second}\\
+Echo Time (ms)                                                                        & Minimum ( smaller than \SI{5}{\milli\second})                                          \\
+Flip angle                                                                                 	& 40                                          \\
+MT Pulse FA									& 300 					\\
+MT offset Frequency FA						& \SI{1.5}{\kilo\hertz} (3.0 T)\\
+MT pulse duration 								& \SI{10}{\milli\second}\\
+Number of measurements                                                  & 5 (ca. 10 minutes total scan time)                 \\
+Receive BAnd Width 							& smaller than 500 Hz/Pixel 	\\
+Further explanations                                                             & See Figure 5 in PPMI Manual for step by step instruction on selecting the FOV.\\
+\bottomrule
+\end{tabularx}
+\end{table}

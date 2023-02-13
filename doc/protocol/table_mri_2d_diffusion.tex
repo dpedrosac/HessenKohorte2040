@@ -1,0 +1,32 @@
+\begin{tabularx}{\linewidth}{@{} s | X @{}}
+\caption{Details on 2D Diffusion-weighted EPI}\\
+\toprule
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D Diffusion-weighted EPI}} \\
+\midrule 
+Series Description   & \ac{DTI}\_RL (and \ac{DTI}\_LR for the repeated scan with reverse PE) \\
+Plane                & Straight Axial                                                        \\
+Slice thickness (mm) & 2.0 with no gap                                                       \\
+Number of Slices     & $\sim$80                                                              \\
+Phase encode dir.    & R \textgreater{}\textgreater L                                        \\
+Matrix               & 128 $\times$ 128*                                                     \\
+\ac{FOV}             & 256 $\times$ 256 mm                                                   \\
+Repetition Time (ms) & $\sim$ \num{10000}                                                    \\
+Echo Time (ms)       & $\sim$80                                                              \\
+Flip angle           & 90                                                                    \\
+Slice order          & Interleaved                                                           \\
+Number of directions & 32                                                                    \\
+b-VALUE              & 0 and 1000 \textsuperscript{s}/\textsubscript{mm\textsuperscript{2}}
+                       (B=0 images interleaved throughout if possible in product sequence)   \\
+Instructions         & Keep still                                                            \\
+Scan Time            & $\sim$ \SI{8}{\minute}                                                \\
+Further explanations & Please instruct the participant to keep still
+                       during the entire scan. \ac{DTI} should be
+                       acquired with 32 directions. Slices should
+                       cover top of the brain down to base of
+                       cerebellum. Two sequences with reversed phase
+                       encoding direction should be acquired in full
+                       to correct for susceptibility induced
+                       distortions. If acquiring a phantom scan, only
+                       one sequence with reverse phase encoding
+                       direction should be acquired.                                         \\
+\end{tabularx}
