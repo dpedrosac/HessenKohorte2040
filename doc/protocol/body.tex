@@ -252,31 +252,15 @@ The study is considered complete when 20 years from the first enrolment are over
 \subsection{Data collection}
 The data collection schedule is shown in Table \ref{tab:DataCollectionPatients}
 \input{table_data_collection_schedule_patients.tex}
-
-\begin{tabularx}{1\textwidth}[H]{@{}X *{6}{C}@{}}\label{tab:DataCollectionRelatives}\\
-\caption{Data Collection Schedule for patients' relatives enrolled in the \textsc{HessenKohorte}}\\
-\toprule
-\textbf{Visit} 				& \textbf{Screening} 			& \textbf{Baseline visit} 	& \textbf{Year 1,2,3,4,5, ... , 20 Visit} 	& \textbf{Half-year visit in between}	& \textbf{Unscheduled Visit} 	\\
-\cmidrule{2-6}
-Informed Consent Process 	& $\times$ 					&  						&  								& 								& 							\\
-Eligibility criteria			& \multicolumn{2}{c}{$\times$}							& 								& 								& 							\\
-Subject demographics 		& \multicolumn{2}{c}{$\times$}							& $\times$\textsuperscript{a}		& $\times$\textsuperscript{a} 		& 							\\
-Questionnaire X			& 													& $\times$						& $\times$						& $\times$\textsuperscript{b} 	\\
-\bottomrule
-\multicolumn{6}{l}{\footnotesize{\textsuperscript{a}All subjects will be asked to disclose possible changes}} \\
-\multicolumn{6}{l}{\footnotesize{\textsuperscript{b}may be ascertained and entered into database}} \\
-\end{tabularx}
-%\end{landscape}
-
-%TODO: This Table is neither filling out entire page. Again, horizontal lines would be helpful, as this may be used as a checklist later. @Urs
+\input{table_data_collection_schedule_relatives.tex}
 
 \subsection{Candidate screening}
 \label{subsec:screening}
 Subjects will be screened for participation in the study based on study inclusion and exclusion criteria as listed in Section \ref{sec:study_selection}. Subjects who have provided informed consent and who have been determined to not meet all eligibility requirements will not be considered.
 
 \subsection{Informed consent}
-Written informed consent must be obtained from potential study candidates and enrollment is only valid, after subjects sign and date the \ac{ICF} (cf. Section ??).
-%TODO: Please add the ICF in the Appendix and add a reference. @Urs
+Written informed consent must be obtained from potential study candidates and enrollment is only valid, after subjects sign and date the \ac{ICF}. The informed consent forms of this study can be found in appendices \label{sec:icf_patient} and \label{sec:icf_relative} respectively.
+
 \begin{itemize}[noitemsep, topsep=0pt]
 \item Subjects will be asked to sign the \ac{ICF} before study-specific tests or procedures are performed.
 \item The idea of the study must be explained, and subjects must be given the time and opportunity to ask questions and have those questions answered to their satisfaction.
@@ -443,36 +427,32 @@ The ``Coping Inventory for Stressful Situations'' (\acs{CISS}) assesses habitual
 The ``Multidimensional Fatique Inventory – 20'' (\acs{MFI-20}) measures 5 dimensions of fatigue with 20 questions: general fatigue, physical fatigue, reduced activity, reduced motivation and mental fatigue. The \acs{MFI-20} was introduced in 1995 \cite{smets1995mfi20}. It is a self-administered test that requires no special training and is reported to take 5--10 minutes to complete. It includes response options to various fatigue-related statements ranging from ``Yes, this is true'' to ``No, this is not true'', scaled from 1 -- 5 per question, with 4 -- 20 points for each dimension. A high total score on the different dimensions corresponds to a higher level of fatigue in the corresponding dimension.
 
 \underline{Psychometrics:}
+\begin{table}[H]
 \begin{tabularx}{1\textwidth}[H]{| >{\raggedright\arraybackslash}X | >{\raggedright\arraybackslash}X | >{\raggedright\arraybackslash}X | }
-\caption{Psychometrics for the \acl{MFI-20}}\\
-\hline
-											& Value											& Source		\\
-\hline
-\textbf{Standard error of measurement (SEM)} 	& 												& 												\\
-\hline
-\textbf{Minimal clinical difference} 				& 												& 												\\
-\hline
-\textbf{Normative data} 						&  cf. \cite{smets1995mfi20} for chronic fatigued patients, radiotherapy patients, soldiers (in training), physicians, psychology students, medical students															& \cite{smets1995mfi20}										\\
-
-\hline
-\textbf{Internal consistency} 					&	General fatigue -- Cronbach's $\alpha$ = \num{.83} -- \num{.90}*			& \cite{smets1995mfi20}	\\
-											&	Physical fatigue -- Cronbach's $\alpha$ = \num{.85} -- \num{.93}*			& \cite{smets1995mfi20}	\\
-											&	Reduced activity -- Cronbach's $\alpha$ = \num{.53} -- \num{.86}*			& \cite{smets1995mfi20}	\\
-											&	Reduced motivation -- Cronbach's $\alpha$ = \num{.57} -- \num{.82}*			& \cite{smets1995mfi20}	\\
-											&	Mental fatigue -- Cronbach's $\alpha$ = \num{.77} -- \num{.93}*			& \cite{smets1995mfi20} \\
-
-\hline
-\textbf{Construct validity} 						&	Significant differences p<\num{0.001} 				& \cite{smets1995mfi20} \\
-\hline
-\textbf{Test/retest reliability} 					& 	Cronbach's $\alpha$ $>$ \num{.88}					& \cite{hinz2020mfi20} \\
-
-\hline
-\textbf{Interrater validity/reliability} 				& 													&		\\
-\hline
-Determined in five different populations (radiotherapy patients, chronic fatigued patients, psychology students, medical students and army recruits)											&	& 		\\
-% @Urs, please add a footnote or merge the columns to one.
+\caption{Psychometrics for the \acl{MFI-20}}\\ \hline
+                                             & Value                                                               & Source                \\ \hline
+\textbf{Standard error of measurement (SEM)} &                                                                     &                       \\ \hline
+\textbf{Minimal clinical difference}         &                                                                     &                       \\ \hline
+\textbf{Normative data}                      & cf. \cite{smets1995mfi20} for chronic fatigued patients,
+                                               radiotherapy patients, soldiers (in training), physicians,
+                                               psychology students, medical students                               & \cite{smets1995mfi20} \\ \hline
+\textbf{Internal consistency}                & General fatigue -- Cronbach's $\alpha$ = \num{.83} -- \num{.90}*    & \cite{smets1995mfi20} \\
+                                             & Physical fatigue -- Cronbach's $\alpha$ = \num{.85} -- \num{.93}*   & \cite{smets1995mfi20} \\
+                                             & Reduced activity -- Cronbach's $\alpha$ = \num{.53} -- \num{.86}*   & \cite{smets1995mfi20} \\
+                                             & Reduced motivation -- Cronbach's $\alpha$ = \num{.57} -- \num{.82}* & \cite{smets1995mfi20} \\
+                                             & Mental fatigue -- Cronbach's $\alpha$ = \num{.77} -- \num{.93}*     & \cite{smets1995mfi20} \\ \hline
+\textbf{Construct validity}                  & Significant differences p<\num{0.001}                               & \cite{smets1995mfi20} \\ \hline
+\textbf{Test/retest reliability}             & Cronbach's $\alpha$ $>$ \num{.88}                                   & \cite{hinz2020mfi20}  \\ \hline
+\textbf{Interrater validity/reliability}     &                                                                     &                       \\ \hline
 \end{tabularx}
 
+\bigskip
+\footnotesize{
+Psychometric values were determined in five different populations
+(radiotherapy patients, chronic fatigued patients, psychology
+students, medical students and army recruits)
+}
+\end{table}
 
 \subsubsection{\acl{PDCB} (\acs{PDCB})}
 \label{questionnaires:PDCB}
