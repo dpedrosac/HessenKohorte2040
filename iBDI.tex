@@ -1,0 +1,198 @@
+
+\ExplSyntaxOn
+\sdaps_context_append:nn{*}{pdf_form=true}
+\ExplSyntaxOff
+
+\section{Beck Depression-Inventar 2 (BDI-II)}
+
+\underline{Baseline} Parkinson-Patient \\
+
+\begin{choicequestion}[cols=7]{}
+        \choiceitemtext{0.7cm}{2}{Code:}
+        \choiceitemtext{0.7cm}{3}{Datum:}
+        \choiceitemtext{0.7cm}{2}{Untersucher:} \end{choicequestion}
+% Prepare some stuff so that we can access the specialized commands more easily.
+\ExplSyntaxOn
+\let\myquestionbegin\sdaps_qobject_begin:nnn
+\let\mycheckbox\sdaps_checkbox:nn
+\let\myanswer\sdaps_answer:n
+\let\myquestionend\sdaps_qobject_end:n
+\ExplSyntaxOff
+
+
+
+
+\begin{center}
+\begin{Large}
+\textbf{Beck Depressions-Inventar - 2}
+\end{Large}
+\end{center}
+Dieser Fragebogen besteht aus 21 Gruppen von Aussagen. Lesen Sie jede dieser Gruppen von Aussagen sorgfältig durch und suchen Sie sich dann in jeder Gruppe \textbf{eine Aussage}, die am besten beschreibt, wie Sie sich \textbf{in den letzten zwei Wochen, einschließlich heute, gefühlt haben.} Kreuzen Sie die Zahl neben der Aussage an, die Sie sich herausgesucht haben. Wenn in einer Gruppe mehrere Aussagen gleichermaßen auf Sie zutreffen, kreuzen Sie die Aussage mit der höheren Zahl an. Achten Sie bitte darauf, dass Sie in jeder Gruppe nicht mehr als eine Aussage ankreuzen, das gilt auch für Gruppe 16 (Veränderung der Schlafgewohnheiten) oder Gruppe 18 (Veränderung des Appetits).
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{|X|c|c|}
+\cline{1-3} 
+\textbf{1. Traurigkeit} \myquestionbegin{BDI1}{Choice}{BDI1}                                                                                                                       & \textbf{}  &  \\ \cline{1-3}
+Ich bin nicht traurig.                                                                                                                        & \textbf{0} & \mycheckbox{1}{0} \myanswer{0}   \\ \cline{1-3}
+Ich bin oft traurig.                                                                                                                          & \textbf{1} & \mycheckbox{1}{1} \myanswer{1}  \\ \cline{1-3}
+Ich bin ständig traurig.                                                                                                                      & \textbf{2} & \mycheckbox{1}{2} \myanswer{2} \\ \cline{1-3}
+Ich bin so traurig oder unglücklich, dass Ich es nicht aushalten kann.                                                                        & \textbf{3} & \mycheckbox{1}{3} \myanswer{3}\myquestionend{BDI1}   \\ \cline{1-3}
+ &  & \\ \cline{1-3}
+\textbf{2. Pessimismus} \myquestionbegin{BDI2}{Choice}{BDI2}                                                                                                                       & \textbf{}  &  \\ \cline{1-3}
+Ich bin nicht mutlos, was meine Zukunft angeht.                                                                                               & \textbf{0} & \mycheckbox{2}{0} \myanswer{0} \\ \cline{1-3}
+Ich bin mutloser als früher, was meine Zukunft angeht.                                                                                        & \textbf{1} & \mycheckbox{2}{1} \myanswer{1} \\ \cline{1-3}
+Ich glaube nicht, dass sich meine Lage verbessert.                                                                                            & \textbf{2} & \mycheckbox{2}{2} \myanswer{2} \\ \cline{1-3}
+Ich habe das Gefühl, dass es keine Hoffnung gibt für meine Zukunft und es nur noch schlimmer wird. & \textbf{3} & \mycheckbox{2}{3} \myanswer{3}\myquestionend{BDI2} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{3. Frühere Misserfolge} \myquestionbegin{BDI3}{Choice}{BDI3}                                                                                                               & \textbf{}  &  \\ \cline{1-3}
+Ich fühle mich nicht als Versager.                                                                                                            & \textbf{0} & \mycheckbox{3}{0} \myanswer{0} \\ \cline{1-3}
+Ich habe öfter versagt, als ich sollte.                                                                                                       & \textbf{1} & \mycheckbox{3}{1} \myanswer{1} \\ \cline{1-3}
+Wenn ich zurückblicke, sehe ich eine Menge Misserfolge.                                                                                       & \textbf{2} & \mycheckbox{3}{2} \myanswer{2} \\ \cline{1-3}
+Ich fühle mich persönlich als totaler Versager.                                                                                               & \textbf{3} & \mycheckbox{3}{3} \myanswer{3}\myquestionend{BDI3} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{4. Verlust von Freude} \myquestionbegin{BDI4}{Choice}{BDI4}                                                                                                                & \textbf{}  &  \\ \cline{1-3}
+Ich habe so viel Freude wie immer an den Dingen, die mir Spaß machen.                                                                         & \textbf{0} & \mycheckbox{4}{0} \myanswer{0} \\ \cline{1-3}
+Ich habe nicht mehr so viel Spaß an den Dingen wie früher.                                                                                    & \textbf{1} & \mycheckbox{4}{1} \myanswer{1} \\ \cline{1-3}
+Ich habe sehr wenig Freude an den Dingen, die mir früher Spaß gemacht haben.                                                                  & \textbf{2} & \mycheckbox{4}{2} \myanswer{2} \\ \cline{1-3}
+Ich habe keine Freude mehr an den Dingen, die mir früher Spaß gemacht haben.                                                                  & \textbf{3} & \mycheckbox{4}{3} \myanswer{3}\myquestionend{BDI4} \\ \cline{1-3}
+\end{tabularx}
+\end{table}
+\newpage
+
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{|X|c|c|}
+\cline{1-3}
+\textbf{5. Schuldgefühle} \myquestionbegin{BDI5}{Choice}{BDI5}                                                                                                                       & \textbf{}  &  \\ \cline{1-3}
+Ich habe keine besonderen Schuldgefühle.                                                                                                                        & \textbf{0} & \mycheckbox{5}{0} \myanswer{0} \\ \cline{1-3}
+Ich habe bei vielen Dingen, die ich getan habe oder hätte tun sollen, Schuldgefühle.  & \textbf{1} & \mycheckbox{5}{1} \myanswer{1} \\ \cline{1-3}
+Ich habe die meiste Zeit Schuldgefühle.                                                                                                                      & \textbf{2} & \mycheckbox{5}{2} \myanswer{2} \\ \cline{1-3}
+Ich habe ständig Schuldgefühle.                                                                        & \textbf{3} & \mycheckbox{5}{3} \myanswer{3}\myquestionend{BDI5}  \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{6. Gefühle, bestraft zu werden} \myquestionbegin{BDI6}{Choice}{BDI6}                                                                                                                       & \textbf{}  &  \\ \cline{1-3}
+Ich habe nicht das Gefühl, für etwas bestraft zu werden.                                                                                               & \textbf{0} & \mycheckbox{6}{0} \myanswer{0} \\ \cline{1-3}
+Ich habe das Gefühl, dass ich vielleicht für etwas bestraft werde.                                                                                        & \textbf{1} & \mycheckbox{6}{1} \myanswer{1} \\ \cline{1-3}
+Ich glaube, dass ich für etwas bestraft werde.                                                                                            & \textbf{2} & \mycheckbox{6}{2} \myanswer{2} \\ \cline{1-3}
+Ich habe das Gefühl, für etwas bestraft zu werden. & \textbf{3} & \mycheckbox{6}{3} \myanswer{3}\myquestionend{BDI6} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{7. Abneigung gegen sich selbst}\myquestionbegin{BDI7}{Choice}{BDI7}                                                                                                               & \textbf{}  &  \\ \cline{1-3}
+Meine Gefühle mir gegenüber sind die gleichen geblieben.                                                                                                            & \textbf{0} & \mycheckbox{7}{0} \myanswer{0} \\ \cline{1-3}
+Ich habe das Vertrauen in mich verloren.                                                                                                       & \textbf{1} & \mycheckbox{7}{1} \myanswer{1} \\ \cline{1-3}
+Ich bin von mir selbst enttäuscht.                                                                                       & \textbf{2} & \mycheckbox{7}{2} \myanswer{2} \\ \cline{1-3}
+Ich mag mich nicht.                                                                                               & \textbf{3} & \mycheckbox{7}{3} \myanswer{3}\myquestionend{BDI7} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{8. Selbstvorwürfe}\myquestionbegin{BDI8}{Choice}{BDI8}                                                                                                                & \textbf{}  &  \\ \cline{1-3}
+Ich bin mir selbst gegenüber nicht kritischer als sonst und mache mir nicht mehr Vorwürfe als sonst. & \textbf{0} & \mycheckbox{8}{0} \myanswer{0} \\ \cline{1-3}
+Ich bin mir selbst gegenüber kritischer als früher.                                                                                    & \textbf{1} & \mycheckbox{8}{1} \myanswer{1} \\ \cline{1-3}
+Ich mache mir Vorwürfe für alle meine Fehler.                                                                  & \textbf{2} & \mycheckbox{8}{2}\myanswer{2} \\ \cline{1-3}
+Ich gebe mir die Schuld für alles Schlimme, was passiert.                                                                  & \textbf{3} & \mycheckbox{8}{3} \myanswer{3}\myquestionend{BDI8} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{9. Selbstmordgedanken oder -wünsche} \myquestionbegin{BDI9}{Choice}{BDI9}                                                                                                                & \textbf{}  &  \\ \cline{1-3}
+Ich denke nie daran, mich umzubringen.                                                                         & \textbf{0} & \mycheckbox{9}{0} \myanswer{0} \\ \cline{1-3}
+Ich habe Selbstmordgedanken, aber ich würde sie nicht ausführen.                                                                                    & \textbf{1} & \mycheckbox{9}{1} \myanswer{1} \\ \cline{1-3}
+Ich möchte mich umbringen.                                                                  & \textbf{2} & \mycheckbox{9}{2} \myanswer{2} \\ \cline{1-3}
+Ich würde mich umbringen, wenn ich die Möglichkeit hätte.                                                                  & \textbf{3} & \mycheckbox{9}{3} \myanswer{3}\myquestionend{BDI9} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{10. Weinen} \myquestionbegin{BDI10}{Choice}{BDI10}                                                                                                                & \textbf{}  &  \\ \cline{1-3}
+Ich weine nicht mehr als früher.                                                                         & \textbf{0} & \mycheckbox{10}{0} \myanswer{0} \\ \cline{1-3}
+Ich weine mehr als früher.                                                                                    & \textbf{1} & \mycheckbox{10}{1} \myanswer{1} \\ \cline{1-3}
+Ich weine wegen jeder Kleinigkeit.                                                                  & \textbf{2} & \mycheckbox{10}{2} \myanswer{2} \\ \cline{1-3}
+Mir ist nach Weinen zumute, aber ich kann nicht.                                                                  & \textbf{3} & \mycheckbox{10}{3} \myanswer{3}\myquestionend{BDI10} \\ \cline{1-3}
+\end{tabularx}
+\end{table}
+\newpage
+
+
+\begin{table}[!ht]
+
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{|X|c|c|}
+\cline{1-3}
+\textbf{11. Unruhe} \myquestionbegin{BDI11}{Choice}{BDI11}                                                                                                                       & \textbf{}  &  \\ \cline{1-3}
+Ich bin nicht unruhiger oder erregter als sonst.                                                                                                                        & \textbf{0} & \mycheckbox{11}{0} \myanswer{0}  \\ \cline{1-3}
+Ich bin unruhiger oder erregter als sonst. & \textbf{1} & \mycheckbox{11}{1} \myanswer{1}  \\ \cline{1-3}
+Ich bin so unruhig oder erregt, dass es schwer ist, mich zu bewegen.                                                                                                                      & \textbf{2} & \mycheckbox{11}{2} \myanswer{2} \\ \cline{1-3}
+Ich bin so unruhig oder erregt, dass ich ständig in Bewegung bleiben oder etwas tun muss.  & \textbf{3} & \mycheckbox{11}{3} \myanswer{3}\myquestionend{BDI11}  \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{12. Interessenlosigkeit} \myquestionbegin{BDI12}{Choice}{BDI12}                                                                                                                       & \textbf{}  &  \\ \cline{1-3}
+Ich habe das Interesse an anderen Menschen oder Tätigkeiten nicht verloren.                                                                                               & \textbf{0} & \mycheckbox{12}{0} \myanswer{0} \\ \cline{1-3}
+Ich bin weniger an anderen Menschen oder Dingen interessiert als vorher.                                                                                        & \textbf{1} & \mycheckbox{12}{1} \myanswer{1} \\ \cline{1-3}
+Ich habe mein Interesse an anderen Menschen oder Dingen zum größten Teil verloren.  & \textbf{2} & \mycheckbox{12}{2} \myanswer{2} \\ \cline{1-3}
+Es ist schwer, für irgendetwas Interesse aufzubringen. & \textbf{3} & \mycheckbox{12}{3} \myanswer{3}\myquestionend{BDI12} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{13. Entschlussfähigkeit} \myquestionbegin{BDI13}{Choice}{BDI13}                                                                                                               & \textbf{}  &  \\ \cline{1-3}
+Ich treffe Entscheidungen etwa so leicht wie immer.                                                                                                            & \textbf{0} & \mycheckbox{13}{0} \myanswer{0} \\ \cline{1-3}
+Es fällt mir schwerer als sonst, Entscheidungen zu treffen.                                                                                                       & \textbf{1} & \mycheckbox{13}{1} \myanswer{1} \\ \cline{1-3}
+Ich habe viel größere Schwierigkeiten, Entscheidungen zu treffen, als früher.                                                                                       & \textbf{2} & \mycheckbox{13}{2} \myanswer{2} \\ \cline{1-3}
+Ich habe Mühe, überhaupt Entscheidungen zu treffen.                                                                                               & \textbf{3} & \mycheckbox{13}{3} \myanswer{3}\myquestionend{BDI13} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{14. Wertlosigkeit} \myquestionbegin{BDI14}{Choice}{BDI14}                                                                                                                & \textbf{}  &  \\ \cline{1-3}
+Ich fühle mich nicht wertlos. & \textbf{0} & \mycheckbox{14}{0} \myanswer{0} \\ \cline{1-3}
+Ich halte mich nicht für so wertvoll und nützlich wie früher.                                                                                    & \textbf{1} & \mycheckbox{14}{1} \myanswer{1} \\ \cline{1-3}
+Ich habe das Gefühl, weniger wert zu sein, als andere Menschen.                                                                  & \textbf{2} & \mycheckbox{14}{2} \myanswer{2} \\ \cline{1-3}
+Ich habe das Gefühl, völlig wertlos zu sein.                                                                  & \textbf{3} & \mycheckbox{14}{3} \myanswer{3}\myquestionend{BDI14} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{15. Verlust an Energie} \myquestionbegin{BDI15}{Choice}{BDI15}                                                                                                                & \textbf{}  &  \\ \cline{1-3}
+Ich habe so viel Energie wie immer.                                                                         & \textbf{0} & \mycheckbox{15}{0} \myanswer{0} \\ \cline{1-3}
+Ich habe weniger Energie als früher.                                                                                    & \textbf{1} & \mycheckbox{15}{1} \myanswer{1} \\ \cline{1-3}
+Ich habe nicht genügend Energie, sehr viel zu tun.                                                                  & \textbf{2} & \mycheckbox{15}{2} \myanswer{2} \\ \cline{1-3}
+Ich habe nicht genügend Energie, irgendetwas zu tun.                                                                  & \textbf{3} & \mycheckbox{15}{3} \myanswer{3}\myquestionend{BDI15} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{16. Veränderung der Schlafgewohnheiten} \myquestionbegin{BDI16}{Choice}{BDI16}                                                                                                                       & \textbf{}  &  \\ \cline{1-3}
+Meine Schlafgewohnheiten haben sich nicht geändert.                                                                                                                        & \textbf{0} & \mycheckbox{16}{0} \myanswer{0}  \\ \cline{1-3}
+Ich schlafe etwas mehr als sonst. & \textbf{1a} & \mycheckbox{16}{1} \myanswer{1} \\ \cline{1-3}
+Ich schlafe etwas weniger als sonst.                                                                                                                      & \textbf{1b} & \mycheckbox{16}{1} \myanswer{1}  \\ \cline{1-3}
+Ich schlafe viel mehr als sonst. & \textbf{2a} & \mycheckbox{16}{2} \myanswer{2} \\ \cline{1-3}
+Ich schlafe viel weniger als sonst. & \textbf{2b} & \mycheckbox{16}{2} \myanswer{2} \\ \cline{1-3}
+Ich schlafe die meiste Zeit des Tages. & \textbf{3a} & \mycheckbox{16}{3} \myanswer{3} \\ \cline{1-3}
+Ich wache 1-2 Stunden zu früh auf und kann dann nicht mehr einschlafen. & \textbf{3b} & \mycheckbox{16}{3} \myanswer{3}\myquestionend{BDI16} \\ \cline{1-3}
+\end{tabularx}
+\end{table}
+\newpage
+
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{|X|c|c|}
+\cline{1-3}
+\textbf{17. Reizbarkeit} \myquestionbegin{BDI17}{Choice}{BDI17}                                                                                                                       & \textbf{}  &  \\ \cline{1-3}
+Ich bin nicht reizbarer als sonst.                                                                                               & \textbf{0} & \mycheckbox{17}{0} \myanswer{0} \\ \cline{1-3}
+Ich bin reizbarer als sonst.                                                                                        & \textbf{1} & \mycheckbox{17}{1} \myanswer{1} \\ \cline{1-3}
+Ich bin viel reizbarer als sonst. & \textbf{2} & \mycheckbox{17}{2} \myanswer{2} \\ \cline{1-3}
+Ich bin ständig reizbar. & \textbf{3} & \mycheckbox{17}{3} \myanswer{3}\myquestionend{BDI17} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{18. Veränderung des Appetits} \myquestionbegin{BDI18}{Choice}{BDI18}                                                                                                               & \textbf{}  &  \\ \cline{1-3}
+Mein Appetit hat sich nicht verändert.                                                                                                            & \textbf{0} & \mycheckbox{18}{0} \myanswer{0} \\ \cline{1-3}
+Mein Appetit ist etwas kleiner als sonst.                                                                                                       & \textbf{1a} & \mycheckbox{18}{1} \myanswer{1} \\ \cline{1-3}
+Mein Appetit ist etwas größer als sonst.                                                                                       & \textbf{1b} & \mycheckbox{18}{1} \myanswer{1} \\ \cline{1-3}
+Mein Appetit ist viel kleiner als vorher.                                                                                               & \textbf{2a} & \mycheckbox{18}{2} \myanswer{2} \\ \cline{1-3}
+Mein Appetit ist viel größer als vorher.                                                                                               & \textbf{2b} & \mycheckbox{18}{2} \myanswer{2} \\ \cline{1-3}
+Ich habe überhaupt keinen Appetit.                                                                                               & \textbf{3a} & \mycheckbox{18}{3} \myanswer{3} \\ \cline{1-3}
+Ich habe ständig großen Hunger.                                                                                               & \textbf{3b} & \mycheckbox{18}{3}\myanswer{3}\myquestionend{BDI18} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{19. Konzentrationsschwierigkeiten} \myquestionbegin{BDI19}{Choice}{BDI19} & \textbf{}  &  \\ \cline{1-3}
+Ich kann mich so gut konzentrieren wie immer. & \textbf{0} & \mycheckbox{19}{0} \myanswer{0} \\ \cline{1-3}
+Ich kann mich nicht so gut konzentrieren wie sonst.                                                                                    & \textbf{1} & \mycheckbox{19}{1} \myanswer{1} \\ \cline{1-3}
+Es fällt mir schwer, mich sehr lange auf etwas zu konzentrieren.                                                                  & \textbf{2} & \mycheckbox{19}{2} \myanswer{2} \\ \cline{1-3}
+Ich kann mich auf gar nichts konzentrieren.                                                                  & \textbf{3} & \mycheckbox{19}{3} \myanswer{3}\myquestionend{BDI19} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{20. Müdigkeit} \myquestionbegin{BDI20}{Choice}{BDI20}                                                                                                                       & \textbf{}  &  \\ \cline{1-3}
+Ich bin nicht müder als sonst.                                                                                                                        & \textbf{0} & \mycheckbox{20}{0} \myanswer{0} \\ \cline{1-3}
+Ich werde schneller müde als sonst.                                                                                                                          & \textbf{1} & \mycheckbox{20}{1} \myanswer{1} \\ \cline{1-3}
+Ich bin für viele Dinge, die ich früher gern getan habe, zu müde.                                                                                                                      & \textbf{2} & \mycheckbox{20}{2} \myanswer{2} \\ \cline{1-3}
+Ich bin für die meisten Dinge, die ich früher gern getan habe, zu müde.                                                                        & \textbf{3} & \mycheckbox{20}{3} \myanswer{3}\myquestionend{BDI20} \\ \cline{1-3}
+  &  & \\ \cline{1-3}
+\textbf{21. Verlust des Interesses am Sex} \myquestionbegin{BDI21}{Choice}{BDI21}                                                                                                                       & \textbf{}  &  \\ \cline{1-3}
+Ich habe in letzter Zeit keine Veränderung meines Interesses an Sex bemerkt.                                                                                               & \textbf{0} & \mycheckbox{21}{0} \myanswer{0} \\ \cline{1-3}
+Ich habe weniger Interesse am Sex als früher.                                                                                        & \textbf{1} & \mycheckbox{21}{1} \myanswer{1} \\ \cline{1-3}
+Ich habe jetzt viel weniger Interesse am Sex als früher.                                                                                            & \textbf{2} & \mycheckbox{21}{2} \myanswer{2} \\ \cline{1-3}
+Ich habe das Interesse am Sex völlig verloren. & \textbf{3} & \mycheckbox{21}{3} \myanswer{3}\myquestionend{BDI21} \\ \cline{1-3}
+\end{tabularx}
+\end{table}
+
+\begin{flushright} \begin{choicequestion}[cols=6]{}
+        \choiceitemtext{1cm}{2}{Gesamtsumme (BDI-2):}
+      \end{choicequestion}
+\end{flushright}

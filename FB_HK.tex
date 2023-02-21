@@ -1,0 +1,87 @@
+\documentclass[
+  english,
+  % If you need it, you can add a custom barcode at the center
+  %globalid=SDAPS,
+  %
+  % And the following adds a per sheet barcode at the bottom left
+  %print_questionnaire_id,
+  ]{sdapsclassic}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{multirow}
+%\usepackage{ltablex}
+\usepackage{sdapspdf}
+\usepackage{pdfpages}
+
+% Load and enable PDF form support; note that \begin{Form}/\end{Form} is needed
+\usepackage{sdapspdf}
+\ExplSyntaxOn
+\sdaps_context_append:nn{*}{pdf_form=true}
+\ExplSyntaxOff
+
+\ExplSyntaxOn
+\let\myquestionbegin\sdaps_qobject_begin:nnn
+\let\mycheckbox\sdaps_checkbox:nn
+\let\myanswer\sdaps_answer:n
+\let\myquestionend\sdaps_qobject_end:n
+\ExplSyntaxOff
+
+\author{PD Dr. med. David J. Pedrosa}
+\title{Protocol - HessenKohorte, Neurology Department, Philipps-University Marburg}
+
+\begin{document}
+\begin{questionnaire}[noinfo] % you can remove the default info with the optional [noinfo]
+\begin{Form}
+\begin{info}
+Bitte füllen Sie die nachfolgenden Fragebögen sorgfältig und in Ruhe aus. Um eine gesicherte, maschinelle Auswertung zu gewährleisten, bitten wir Sie, die anzukreuzenden Felder deutlich und über den Rand hinaus anzukreuzen. Ein Beispiel für die korrekte Bearbeitung: \checkedbox{} $~$ bzw. \checkedbox*{} \\ Falls Sie eine Angabe korrigieren wollen, füllen Sie das falsch ausgefüllte Feld bitte wie folgt aus: \correctedbox{}$~$ bzw. \correctedbox*{} und kreuzen die neue Antowert wie oben beschrieben an.\\
+Bei den Fragebögen, bei denen eine Angabe zu Datum der Durchführung oder zum Geburtsdatum erforderlich sind, sind diese im tt.mm.jjjj Format auszufüllen. 
+\end{info}
+\vspace{1cm}
+\addinfo{Date}{XX.XX.20XX} %adds date to report
+
+\begin{Large}
+\textbf{Fragebögen Hessenkohorte}
+\end{Large}
+\vspace{1cm}
+\begin{choicequestion}[cols=3]{}
+        \choiceitemtext{0.7cm}{2}{Patient*in ID:}
+        \choiceitemtext{0.7cm}{1}{Datum:}
+\end{choicequestion}
+
+Noch generelle Infos etc.
+
+Sozioökonomischer Status? z.B. wie sieht der haushalt aus, einkommen, sozialkontakte, vllt schlafskala bzw. Müdigkeit, Rauchen ja nei wie lange, trinkverhalten, edinborough handedness skala  etc.
+
+
+\newpage
+\input{../iBDI.tex}
+\newpage
+\input{../iCBI.tex}
+\newpage
+\input{../iPDCB.tex}
+\newpage
+\input{../iZBI.tex}
+\newpage
+\input{../iPSS.tex}
+\newpage
+\input{../iMFI.tex}
+\newpage
+\input{../iCISS.tex}
+\newpage
+\input{../iPflegebogen_komplett.tex}
+\newpage
+\input{../iMOCA.tex}
+\newpage
+\input{../iWHOQoLOLD.tex}
+\newpage
+\input{../iSSCS.tex}
+\newpage
+\input{../iVAS.tex}
+\newpage
+\input{../iPHQ.tex}
+
+
+\end{Form}
+\end{questionnaire}
+\end{document}
