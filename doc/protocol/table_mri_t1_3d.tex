@@ -5,20 +5,17 @@
 \multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{T1-weighted, 3D volumetric \ac{MRI}-sequence during the \textsc{HessenKohorte}, e.g. \ac{MP-RAGE}, \ac{IR-FSPGR}}} \\
 %\multicolumn{2}{l}{} \\
 \midrule
-Series description        & 3D T1-weighted                                                                                                              \\
-Plane                     & Sagittal                                                                                                                    \\
-Slice thickness (mm)      & 1.0 (slice thickness must remain consistent across timepoints)                                                              \\
-Number of slices          & 192 (slice thickness may be adjusted to \SI{1.2}{\mm} to cover brain if absolutely necessary. No adjustments of number of slices) \\
-Voxel size (mm)           & \SI{1}{} $\times$ \SI{1}{\mm} in plane resolution                                                                           \\
-Phase encode direction    & Anterior--Posterior (AP)                                                                                                    \\
-Matrix                    & 256 $\times$ 256 (the use of interpolation, zero-filling or a ZIP factor is not permitted)                                  \\
-TR/TE/FA/other parameters & will be defined by Invicro according to the scanner                                                                         \\
-\ac{FOV}                  & \num[round-precision = 0, round-mode = places]{256}{mm} (full \ac{FoV} required, no rectangular \ac{FoV})                   \\
-Scan time                 & $\sim$ \num[round-precision = 0, round-mode = places]{7}{min} \\
-Further explanations      & \ac{FoV} must include entire brain anatomy, including vertex, cerebellum and pons. The slices should be oblique sagittally, 
-                            angled along the longitudinal fissure on both the axial and coronal localisers. To avoid artefacts, subjects should be 
-                            positioned with sufficient free space around the head: approximately \SI{1.5}{\cm} or more above the top of the head, and 
-                            leave 3-4 free slices on each side. Avoid ghosting of the nose. \\
+Series description								& 3D T1-weighted 	\\
+Plane                     								& Sagittal \\
+Slice thickness      								& \SI{1.0}{\milli\metre} (slice thickness must remain consistent across timepoints)                                             \\
+Number of slices          							& \num[round-precision = 0, round-mode = places]{192} (slice thickness adjustable to \SI{1.2}{\milli\metre} to cover brain if absolutely necessary. No adjustments of number of slices) \\
+Voxel size           								& \SI{1}{} $\times$ \SI{1}{\milli\metre} in plane resolution \\
+Phase encode direction							& Anterior--Posterior (AP) \\
+Matrix                    								& \num[round-precision = 0, round-mode = places]{256} $\times$ \num[round-precision = 0, round-mode = places]{256} (the use of interpolation, zero-filling or a ZIP factor is not permitted)                               \\
+\ac{TR}/\ac{TE}/other parameters 				& Will be defined by technician according to the scanner \\
+\ac{FoV}                  								& \num[round-precision = 0, round-mode = places]{256} \SI{}{\milli\metre} (full \ac{FoV} required, not rectangular) 	\\
+Scan time                 								& $\sim$ \num[round-precision = 0, round-mode = places]{7}\SI{}{\minute} \\
+Further explanations     							& \ac{FoV} must include the entire brain anatomy, including the vertex, cerebellum and pons. The slices should be oblique sagittally, angled along the longitudinal suture on both the axial and coronal localisers. To avoid artefacts, subjects should be positioned with sufficient free space around the head: $\sim$ \SI{1.5}{\centi\metre} or more above the top of the head, leaving 3--4 free slices on each side. Avoid ghosting the nose.\\
 \bottomrule 
 \multicolumn{2}{l}{\footnotesize{*protocol is identical to the one used by the \ac{PPMI}-study}}
 \end{tabularx}

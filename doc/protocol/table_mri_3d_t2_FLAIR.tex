@@ -3,15 +3,15 @@
 \toprule
 \multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{3D T2 \ac{FLAIR} Sequence}} \\
 \midrule 
-Series Description        	& 3D T2 FLAIR                                                     \\
-Plane                     		& Sagittal                                                        \\
-Slice thickness (mm)     	& 1.0--1.2 (slice thickness must remain consistent)             \\
-Number of slices          	& 192 (please adjust slice thickness up to \SI{1.2}{\milli\metre} to cover brain, not the number of slices)                       \\
-Voxel size (mm)		& 1.0 $\times$ \SI{1.0}{\milli\metre} in plane resolution \\
-Phase encode dir.         	& Anterior-Posterior (AP)                                         \\
-Matrix                    		& 256 $\times$ 256 (the use of interpolation, zero-filling or a ZIP factor is not permitted)                  \\
-TR/TE/FA/other parameters & Will be defined by Invicro according to the scanner             \\
-\ac{FOV}                  		& \SI{256}{\milli\metre} (full \ac{FOV} required, no rectangular \ac{FOV})                                        \\
-Scan Time                 		& $\sim$\SI{7}{\minute}                                           \\
-Further explanations     	& The \ac{FOV} must include the entire brain anatomy, including the vertex, cerebellum and pons. To avoid artefacts, position the subject so that there is sufficient free space around the head: approximately \SI{1.5}{\centi\metre} of air or more above the top of the head, and leave 1 to 2 blank discs on the top of the head. Avoid nose ghosting.\\
+Series Description        					& 3D T2 FLAIR                                                     \\
+Plane                     						& Sagittal                                                        \\
+Slice thickness                              			& \SIrange{1.0}{1.2}{\milli\metre} (slice thickness must remain consistent)             \\
+Number of slices          					& \num[round-precision = 0, round-mode = places]{192} (slice thickness adjustable to \SI{1.2}{\milli\metre} to cover brain if absolutely necessary. No adjustments of number of slices) \\
+Voxel size           						& \SI{1}{} $\times$ \SI{1}{\milli\metre} in plane resolution \\
+Phase encode dir.         					& Anterior-Posterior (AP)                                         \\
+Matrix                    						& \num[round-precision = 0, round-mode = places]{256} $\times$ \num[round-precision = 0, round-mode = places]{256} (the use of interpolation, zero-filling or a ZIP factor is not permitted)                               \\
+\ac{TR}/\ac{TE}/other parameters 		& Will be defined by technician according to the scanner \\
+\ac{FoV}                  						& \num[round-precision = 0, round-mode = places]{256} \SI{}{\milli\metre} (full \ac{FoV} required, not rectangular) 	\\
+Scan time                 						& $\sim$ \num[round-precision = 0, round-mode = places]{7}\SI{}{\minute} \\
+Further explanations     					& The \ac{FoV} must include the entire brain anatomy, including the vertex, cerebellum and pons. To avoid artefacts, position the subject so that there is sufficient free space around the head: approximately \SI{1.5}{\centi\metre} of air or more above the top of the head, and leave 1 to 2 blank discs on the top of the head. Avoid nose ghosting.\\
 \end{tabularx}
