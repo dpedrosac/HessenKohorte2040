@@ -9,7 +9,7 @@ This project will investigate the \ac{QoL} of patients with \ac{iPD} over time. 
 \subsection{Geographic context}
 \ac{iPD} is one of the most common neurological disorders. Estimates put the incidence of the disease in Germany at \SI{84.1}{} per \num[round-precision = 0, round-mode = places]{100000}{} people per year and assume a number of \num[round-precision = 0, round-mode = places]{400000}{} people \citep{nerius2017parkinson}. In order to understand the particularities of the \UKM as far as the care of \ac{iPD} patients is concerned, it is necessary to know the location of Marburg. About \SI[round-precision = 0, round-mode=places]{77000}{} people live in the city of Marburg, which is located in the countryside of central Germany. It is a university town and a district town in the federal state of Hesse (see figure \ref{fig1:hesseGermany}). Due to its location at about \SI{80}{\km} direct distance between the metropolitan areas of Frankfurt am Main and Kassel, the role of the \UKM must be understood as the predominant centre for medical care in the district. Approximately \num[round-precision = 0, round-mode = places]{1500}{} people with \ac{iPD} are treated there every year. In order to ensure access to care for patients in the district of Marburg, the \ac{PANAMA} was founded in 2016 by the Department of Neurology. In this care network, various stakeholders work together to facilitate the integration of care services and improve outcomes for patients. At the same time, it is a tertiary centre that combines established treatment services for each stage of the disease with university medicine and offers a range of studies that can provide innovative forms of therapy. This allows us to offer modern, tailored treatment to people from outside the region.
 
-\begin{wrapfigure}{r}{0.45\textwidth} %this figure will be at the right
+\begin{wrapfigure}{r}{0.45\textwidth}
     \label{fig1:hesseGermany}
     \centering
     \includegraphics[width=0.45\textwidth]{Hesse_in_Germany.v1.0}
@@ -24,7 +24,8 @@ In order to represent the diversity of the population of \ac{iPD}-patients at \U
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Protocol synopsis}
-\inputtable{table_protocol_synopsis.tex}
+% \inputtable{table_protocol_synopsis.tex}
+%Urs: table_protocol_synopsis missing in github
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,7 +76,7 @@ With regard to our hypothesis concerning the prediction of disease progress, we 
 \begin{figure}[h]
 \label{fig2:scheme}
 \centering
-\includegraphics[width=1\textwidth]{Schema_HessenKohorte.v1.0}
+\includegraphics[width=1\textwidth]{Schema_HessenKohorte.v2.0}
 \caption{Schematic overview of the planned analyses. Subjects will be enrolled subsequently and will receive regular follow-ups. In addition to clinical data in form of different questionnaires, biomarkers including cranial \ac{MRI}, blood, saliva, urine, hair and stool samples will be collected at an annual basis.}
 \end{figure}
 
@@ -116,9 +117,6 @@ Reasons for withdrawal include but are not limited to:
 
 Subjects may withdraw at any time, with or without reason, and without prejudice to further treatment. The applicable \ac{CRF} up to the point of subject withdrawal and an end-of-study form \ref{chap:appendix} must be completed. A minimum of three documented attempts to contact any subject considered lost to follow-up should be made prior to completion of the end-of-study form. No further study data should be collected after the point at which a subject is withdrawn from the study or withdraws consent, for whatever reason. Data collected up to the time of subject withdrawal may be used. Subjects withdrawn after implantation will not be replaced.
 
-% which 'implant procedure'?
-%TODO: We need to draw and End-of-Study-Form @Steffi
-
 \subsection{Lost to follow-up}
 Patients who do not react to the invitation to fill ou the questionnaires will be contacted in total three times per mail or email:
 \begin{itemize}
@@ -127,7 +125,6 @@ Patients who do not react to the invitation to fill ou the questionnaires will b
 \item 30 days thereafter
 \end{itemize}
 If there is no response to the third contact attempt, patients are contacted by telephone to find out if there is a problem. Patients who cannot be contacted will receive the same number of mails/calls after one and two years. If there is no response for three years, an end of study form (see \ref{}) will be completed and the subject will be excluded. Vacancies due to excluded subjects may be filled 5 and 10 years after the start of the study.
-
 % Urs: Ist das end-of-study form schon on im Appendix?
 
 \subsection{Subject status and classification}
@@ -223,9 +220,7 @@ The \acl{CBI} assesses the presence or severity of symptoms indicative of burnou
 
 \subsubsection{\acl{CISS} (\acs{CISS})}
 \label{questionnaires:CISS}
-The \acl{CISS} assesses habitual coping with stress in the context of task-oriented coping, emotion-oriented coping and avoidance-oriented coping with a total of 24 and 48 questions respectively. The CISS was originally introduced in 1990 \cite{endler1990ciss} and revised in 2020 for a shortened, German-language version \cite{kalin2020ciss}. The questionnaire is self-administered without special training and takes 10--15 minutes to complete.
-
-%TODO: add further details to how the score is determined, @David?
+The \acl{CISS} assesses habitual coping with stress in the context of task-oriented coping, emotion-oriented coping and avoidance-oriented coping with a total of 24 and 48 questions respectively. The CISS was originally introduced in 1990 \cite{endler1990ciss} and revised in 2020 for a shortened German version \cite{kalin2020ciss}. The questionnaire is self-administered without special training and takes 10 to 15 minutes to complete. Three distinct domains of coping (task-, emotion- and avoidance-oriented coping) can be identified using a normogram and according to the respective questions. The test is not validated for sequential administration and is therefore administered once every 5 years.
 
 \underline{Psychometrics:}
 \inputtable{table_psychometrics_ciss.tex}
@@ -246,16 +241,15 @@ The `Parkinson's Disease Caregiver Burden Questionnaire''  (\acs{PDCB}) measures
 
 \subsubsection{\acl{PHQ}}
 \label{questionnaires:PHQ}
-The ``Patient Health Questionnaire'' (\acs{PHQ}) is an instrument for the diagnosis of mental disorders that assesses various somatic, psychological and stress-related complaints on the basis of 16 domains. The \acs{PHQ}, which is based on DSM-IV criteria, was introduced for psychodiagnosis in the USA in 1999 \cite{spitzer1999phq} and validated in 2002 as the ``Health Questionnaire for Patients (PHQ-D)'' in a German version \cite{lowe2002phq}. It takes about 15 minutes to complete and is self-administered. Nine of the items (2a--2i) measure ``depressiveness''. The response categories are as follows: 0 (``not at all''), 1 (``on some days''), 2 (``on more than half of the days'') and 3 (``almost every day''), giving a score of 0--27. Scores below 5 points indicate no depressive symptoms, 5--10 points indicate mild depressive symptoms and all scores above 10 points indicate major depression (moderate, marked or severe). A further 15 items (1a--1m, 2c, 2d) measure somatic symptoms, resulting in a scale total for the `somatic symptoms''. Of these, 13 items are scored as: 0 (``not impaired''), 1 (``slightly impaired'') or 2 (`severely impaired''). In addition, two items from the depression section are scored as: 0 (``not at all''), 1 (``on some days''), 2 (``on more than half of the days'') and 3 (``almost every day''). The total score ranges from 0--30 points, with higher scores corresponding to greater somatoform distress. 
+The \acs{PHQ} is an instrument for the diagnosis of mental disorders that assesses various somatic, psychological and stress-related complaints on the basis of 16 domains. The \acs{PHQ}, which is based on DSM-IV criteria, was introduced for psychodiagnosis in the USA in 1999 \cite{spitzer1999phq} and validated in 2002 as the ``Health Questionnaire for Patients (PHQ-D)'' in a German version \cite{lowe2002phq}. It takes about 15 minutes to complete and is self-administered. Nine of the items (2a--2i) measure ``depressiveness''. The response categories are as follows: 0 (``not at all''), 1 (``on some days''), 2 (``on more than half of the days'') and 3 (``almost every day''), giving a score of 0--27. Scores below 5 points indicate no depressive symptoms, 5--10 points indicate mild depressive symptoms and all scores above 10 points indicate major depression (moderate, marked or severe). A further 15 items (1a--1m, 2c, 2d) measure somatic symptoms, resulting in a scale total for the `somatic symptoms''. Of these, 13 items are scored as: 0 (``not impaired''), 1 (``slightly impaired'') or 2 (`severely impaired''). In addition, two items from the depression section are scored as: 0 (``not at all''), 1 (``on some days''), 2 (``on more than half of the days'') and 3 (``almost every day''). The total score ranges from 0--30 points, with higher scores corresponding to greater somatoform distress. 
 A severity score for the stress domain can be obtained by summing items 12a--12j to obtain a` scale total. The numerical rating of the individual items is 0 ('not affected'), 1 ('slightly affected') or 2 ('severely affected'). Accordingly, the total stress score varies between 0 and 20, with higher scores corresponding to greater stress.
 
 \underline{Psychometrics:}
-\inputtable{table_psychometrics_phq.tex} %TODO: The values are missing, as well as the source,@David?
+\inputtable{table_psychometrics_phq.tex}
 
 \subsubsection{\acl{PSS} (\acs{PSS})}
 \label{questionnaires:PSS}
-Der „Perceived Stress Scale“ ist eine Selbstauskunft, die das Ausmaß bewertet, in dem der Befragte Situationen in seinem Leben im letzten Monat als stressig empfunden hat und erfasst dabei sowohl eine Skala der Hilflosigkeit als auch der Selbstwirksamkeit. Der PSS-Fragebogen besteht aus 10 Fragen, die das Stressempfinden im letzten Monat in Ihrer Häufigkeit auf einer Skala von „Nie“ bis „Fast immer“ erfassen. Erstmalig wurde der PSS 1983 eingeführt (Cohen et al. 1983) und 2010 in eine deutsche Verfassung überarbeitet (Schneider et al. 2010). 
-Die Durchführung dauert etwa 5 Minuten und erfordert kein gesondertes Training. Die Antwortmöglichkeiten auf der Skala von „Nie“ bis „Fast immer“ entsprechen einer Punkteskala von 1-5. Die Skala der Hilflosigkeit ergibt sich aus der Summe der Items 1, 2, 3, 6, 9, 10; die Skala der Selbstwirksamkeit aus der Summe der Items 4, 5, 7, 8. Für die Berechnung des Gesamtscores müssen die Items 4, 5, 7 und 8 der Selbstwirksamkeitsskala invertiert werden. Der Gesamtscore berechnet sich aus der Summe der Items der Hilflosigkeitsskala und der Summer der invertierten Items der Selbswirksamkeitsskala. Höhere Werte deuten auf ein erhöhtes Stresslevel hin.
+The \ac{PSS} is a self-report measure of the extent to which the respondent has found situations in his/her life stressful in the past month and includes both a helplessness scale and a self-efficacy scale. It consists of 10 questions measuring the frequency of feeling stressed in the past month on a scale from ``never'' to ``almost always'', corresponding to a point scale between 1 and 5. The \ac{PSS} was first introduced in 1983 \cite{cohen1983pss} and revised in 2010 \cite{schneider2020pss}. It takes about 5 minutes to complete and requires no special training. The helplessness scale is the sum of items 1, 2, 3, 6, 9, 10; the self-efficacy scale is the sum of items 4, 5, 7, 8. To calculate the total score, items 4, 5, 7 and 8 of the self-efficacy scale must be inverted. The total score is the sum of the helplessness scale items and the sum of the inverted self-efficacy scale items. Higher scores indicate greater distress.
 
 \underline{Psychometrics:}
 \inputtable{table_psychometrics_pss.tex}
@@ -263,9 +257,7 @@ Die Durchführung dauert etwa 5 Minuten und erfordert kein gesondertes Training.
 \subsubsection{\acl{WHOQoL} (\acs{WHOQoL})}
 \label{questionnaires:WHOQoL}
 
-Der Fragebogen “World Health Organization Quality of Life – BREF” erfasst die subjektive Lebensqualität im Erwachsenenalter und besteht aus insgesamt 26 Items, die den 4 Domänen Physische Lebensqualität, Psychische Lebensqualität, Soziale Beziehungen und Umwelt zugeordnet sind. Dazu wird anhand von 2 zusätzlichen Items die globale Lebensqualität und generelle Gesundheit abgefragt. Im Auftrag der World Health Organisation wurde der Fragebogen 1996 eingeführt und in deutscher Übersetzung seit 2016 angewendet.
-
-Die Bearbeitungsdauer wird mit 10 – 15 Minuten angegeben. Anhand der Antwortmöglichkeiten werden die Domänen durch eine Punkteskala (1-5) wie folgt quantifiziert, wobei eine höhere Punktzahl einer besseren Lebensqualität entspricht:
+The \ac{WHOQoL} questionnaire measures subjective quality of life in adulthood and consists of a total of 26 items divided into 4 domains: physical quality of life, psychological quality of life, social relationships and environment. In addition, global quality of life and general health are measured by 2 additional items. The questionnaire was introduced in 1996 \cite{world1996whoqol} on behalf of the \ac{WHO} and has been used in German translation since 2002 \cite{gunzelmann2002whoqol}. The time required to complete the questionnaire is given as 10-15 minutes. Based on the response options, the domains are scored on a point scale (1-5) as follows, with higher scores corresponding to better quality of life:
 
 \underline{Scores:}
 \begin{itemize}\itemsep2pt
@@ -280,53 +272,54 @@ Die Bearbeitungsdauer wird mit 10 – 15 Minuten angegeben. Anhand der Antwortm�
 
 \subsection{Biosamples}
 \label{subsec:biosamples}
-
-% Urs: Hier fehlt vielleicht noch ein kurzer Satz, dass alle Proben bis auf die Haarproben unmittelbar und lokal analysiert werden. Die Haarproben werden zur Analyse nach Wien geschickt.
+The collected blood, urine, saliva and faeces samples are immediately processed at the \ac{CBBMR}. Processing is carried out by an experienced team to the highest international standards. 
 
 \subsubsection{Blood}
 \label{biosamples:blood}
 Various samples will be collected for proteomic, metabolomic and genetic analyses:
-\begin{item}
+\begin{itemize}
 \item EDTA (35ml) for DNA extraction, plasma preparation and blood count
 \item PAX gene system for transcriptome information
 \item CPT (8ml) for obtaining MCs
-\end{item}
-A maximum of 55ml will be collected at each visit and it is strongly recommended that research blood samples are collected in a fasted state (i.e. at least 8 hours since last meal/food intake) to ensure sample quality for future analysis. If fasting is not possible, participants should be advised to follow a low fat diet. All research samples will be sent to a central biorepository for indefinite storage for research purposes. Samples will be made available to researchers for analysis in relation to \ac{iPD} and other diseases.
+\end{itemize}
+A maximum of \SI[round-precision = 0, round-mode = places]{55}{\micro\litre} will be collected at each visit and it is strongly recommended that research blood samples are collected in a fasted state (i.e. at least 8 hours since last meal/food intake) to ensure sample quality for future analysis. If fasting is not possible, participants should be advised to follow a low fat diet. All research samples will be sent to a central biorepository for indefinite storage for research purposes. Samples will be made available to researchers for analysis in relation to \ac{iPD} and other diseases.
+
+Required materials:
+% Aus den SOP übernehmen
 
 \subsubsection{Urine}
 \label{biosamples:urine}
-Es wird Urin gesammelt, der zur weiteren Analyse mit betrachtet werden soll. HIerzu werden Teilnehmer gebeten, 2 x 10ml frischen Mittelstrahlurin abzugeben. Die Verarbeitung der Proben geschieht unmittelbar durch das CMMBB.
+Urine will be collected for further analysis. Participants will be asked to provide 2 x 10ml of fresh midstream urine. Samples will be processed directly by the \ac{CBBMR}.
 
 \subsubsection{Saliva}
 \label{biosamples:saliva}
-Es erfolgen zwei Sammkungen von Speichelproben mit unterschiedlichem Ziel. Zum einen soll eine Analyse der Metabolomics bei den \ac{iPS}-Patienten erfolgen, zum anderen eine DNA-Extraktion. Es sind keine Vorbereitungen für die Probenentnahme notwendig.
+Two saliva collections will be performed with different objectives. The first is for metabolomic analysis in \ac{iPS} patients and the second is for DNA extraction. No preparation is required for the sample collection.
 
-Für die Anylse der Metabolomics erfolgt die Sammlung des Speichels mittels Salivette (Sarstedt??). Hierzu erfolgt die Entnahme nach ``unstimulated whole-mouth wash'' und es werden zwei Röhrchen gefüllt. Daneben wird eine Probe mittels Kaugummi erfolgen, die zusammen mit dem Kaugummi zentrifugiert wird bevor das Kaugummi entsorgt wird.  Die anschließend homogenisierte Probe wird in Aliquots von  \SI{150}{\micro\litre} gefüllt und bei -80°C gelagert.
+For metabolomics, saliva is collected using a salivette (Sarstedt??). The sample is taken after an ``unstimulated whole-mouth wash'' and two tubes are filled. In addition, a sample is taken with chewing gum, which is centrifuged with the gum before the gum is discarded.  The homogenised sample is then aliquoted at \SI[round-precision = 0, round-mode = places]{150}{\micro\litre} and stored at \SI[round-precision = 0, round-mode = places]{-80}{\degreeCelsius}.
 
-Die DNA-Extraktion aus Speichelproben erfolgt mit dem SalivaGene Collection Module II System. Dieses System vereinfacht die Entnahme und Lagerung der Proben durch einfache Handhabung. Die Proben werden bis zu 12 Monate bei -80°C gelagert und anschließend im CMBBR prozessiert. 
+DNA extraction from saliva samples is performed using the SalivaGene Collection Module II system. This system facilitates sample collection and storage through ease of use. Samples are stored at \SI[round-precision = 0, round-mode = places]{-80}{\degreeCelsius} for up to \num[round-precision = 0, round-mode = places]{12} months and then processed in the \ac{CBBMR}.
 
-Benötigte Materialien
+Required materials:
 \begin{itemize}
 \item Invitek SalivaGene Collection Module II (Artikelnummer: 10 352 122 00)
 \item Sarstedt Salivette (Artikelnummer: 51.1534.500)
-
 \end{itemize}
 
 \subsubsection{Hair}
 \label{biosamples:hair}
 Metabolomics is a useful tool for identifying biomarkers of disease and uncovering pathogenic mechanisms [10.3389/fchem.2021.674265]. However, most metabolomic studies use biological fluids such as blood and urine as biospecimens, which can be dramatically affected by daily activities and dietary variations, resulting in measurement variability. In contrast, hair can serve as a robust source of stable longitudinal metabolite information. Human hair grows at a rate of approximately \num{1} \SI{}{\centi\metre} per month, with both endogenous compounds and environmental factors being incorporated into the hair during growth. Therefore, we plan to analyse hair metabolomics over time during the course of the study. For this purpose, an in-house questionnaire on hair characteristics and products used has been developed and will be administered to all patients. A specific protocol has been developed for hair collection, including standardised location of hair to be collected, technique and processing. 
 
-Hair samples are taken from the posterior vertex using a standardised procedure. Along with a questionnaire asking about the use of specific products, 2-3 strands of hair are cut as close to the skin as possible. The collected hairs are wrapped in foil and stored in a dark place until processing. Further details of the procedure are given in the appendix (see chapter \ref{chap:appendix}).
+Hair samples will be taken from the posterior vertex using a standardised procedure. Along with a questionnaire asking about the use of specific products, 2-3 strands of hair are cut as close to the skin as possible. The collected hairs are wrapped in foil and stored in a dark place until processing. Further details of the procedure are given in the appendix (see chapter \ref{chap:appendix}).
 
 \subsubsection{Stool}
 \label{biosamples:stool}
-
 
 \subsection{\ac{MRI}}
 \label{subsec:MRI}
 Every enrolled patient will receive an \ac{MRI} if there is no contraindication and if the patient wishes. To maximise synergy with other large studies at the centre and to ensure high quality sequences, the programme to be undertaken has been based on the PPMI study\footnote{\url{https://www.ppmi-info.org/}}. Further details are provided below.
 \subsubsection{Overview of MR-imaging}
-\inputtable{table_mri_overview.tex}
+% \inputtable{table_mri_overview.tex}
+% Urs: diese Tabelle fehlt
 
 \subsubsection{Procedure of the imaging}
 Participants should be positioned comfortably and correctly to minimise movement during the scan. Technicians are also instructed to observe the following
@@ -491,7 +484,6 @@ Similar to the procedure for patients, the half-yearly visit of relatives will m
 \item \acl{PSS} -- \acs{PSS} (cf. Section \ref{subsec:questionnaires}\ref{questionnaires:PSS})
 \end{itemize}
 
-
 \subsection{Annual visit relatives ($\pm$ 100 days)}
 On an annual basis, the relatives are subjected to an extended data assessment, which can also take place at a distance, i.e. electronically or by post. The following information is collected from relatives during the annual visit:
 
@@ -507,6 +499,9 @@ On an annual basis, the relatives are subjected to an extended data assessment, 
 \item \acl{PSS} -- \acs{PSS} (cf. Section \ref{subsec:questionnaires}\ref{questionnaires:PSS})
 \item \acl{WHOQoL} -- \acs{WHOQoL} (cf. Section \ref{subsec:questionnaires}\ref{questionnaires:WHOQoL})
 \end{itemize}
+
+\subsection{Monthly meetings}
+% Urs: Kannst Du hier einmal einen kurzen Text interdisziplinären Treffen alle vier Wochen schreiben, bei denen die Patient:innen aus den letzten 30 Tagen besprochen werden und über etwaige Ausschlüsse/Maßnahmen gesprochen wird?
 
 \section{Data management}
 % Bitte Urs idealerweise nichts daran ändern, sondern die THM dazu bekommen, dass sie die Treuhandstelle einrichten und wir das wie geplant machen können
