@@ -51,7 +51,7 @@
 \usepackage{xcolor}
 \usepackage[bottom]{footmisc}
 \usepackage{microtype}
-\usepackage[round, sort, numbers]{natbib}
+\usepackage[square, sort, numbers]{natbib}
 \bibliographystyle{abbrvnat}
 \usepackage{multicol}
 \usepackage{ltablex}
@@ -107,6 +107,8 @@
 
 \newcolumntype{d}[1]{D..{#1}}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{P}{>{\raggedright\arraybackslash\footnotesize}X}
+\newcolumntype{Q}[1]{>{\raggedright\arraybackslash\footnotesize}m{#1}}
 \newcommand\mc[1]{\multicolumn{1}{C}{#1}} % shortcut macro
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} % TODO what is this?
 \newcommand{\UKM}[1]{University Hospital of Marburg}
