@@ -281,3 +281,13 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# testdocument for quick testing of tables etc.
+testdoc*
+
+# temporary files
+tmp*
+
+# gimp files
+*.xcf
+

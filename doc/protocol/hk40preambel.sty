@@ -58,6 +58,7 @@
 \usepackage{pdfpages}
 \usepackage[export]{adjustbox}
 \usepackage{amssymb}
+\usepackage{geometry}
 
 \usepackage{anyfontsize}
 \setkomafont{chapter}{\normalfont\Large}
@@ -105,6 +106,16 @@
 \usepackage{footmisc}
 \usepackage{tablefootnote} 
 \usepackage{enumitem}
+
+% define thick lines for tables
+\usepackage{array}
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+\makeatother
 
 \newcolumntype{d}[1]{D..{#1}}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
