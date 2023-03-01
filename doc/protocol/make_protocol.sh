@@ -13,3 +13,13 @@ pdflatex protocol-HessenKohorte2040.tex
 bibtex protocol-HessenKohorte2040.aux
 pdflatex protocol-HessenKohorte2040.tex
 pdflatex protocol-HessenKohorte2040.tex
+
+# cleanup after compilation
+rm *.aux
+rm *.log
+rm *.out
+rm *.lof
+rm *.blg
+rm *.bbl
+rm *.lot
+rm *.toc

@@ -1,0 +1,21 @@
+\begin{tabularx}{\linewidth}{@{} s | X @{}}
+\caption{Details on 2D Diffusion-weighted EPI}\\
+\toprule
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D Diffusion-weighted EPI}} \\
+\midrule 
+Series description								& \ac{DTI}\_RL (and \ac{DTI}\_LR for the repeated scan with reverse phase encoding) \\
+Plane										& Straight axial                                                        \\
+Slice thickness                              					& \SI{2}{\milli\metre} with no gap \\
+Number of slices     							& $\sim$80                                                              \\
+Phase encode direction                                			& R $\gg$ L\\
+Matrix               								& \num[round-precision = 0, round-mode = places]{128} $\times$ \num[round-precision = 0, round-mode = places]{128}                                                     \\
+\ac{FoV}             								& \num[round-precision = 0, round-mode = places]{256} $\times$ \num[round-precision = 0, round-mode = places]{256} \SI{}{\milli\metre}	\\
+Repetition time 								& $\sim$ \num[round-precision = 0, round-mode = places]{10000} \SI{}{\milli\metre} \\
+Echo time                                    						& \num[round-precision = 0, round-mode = places]{80} \SI{}{\milli\second} \\
+Flip angle           								& 90                                                                    \\
+Slice order          								& Interleaved                                                           \\
+Number of directions                            				& \num[round-precision = 0, round-mode = places]{32} \\
+B-value              								& 0 and 1000 \textsuperscript{s}/\textsubscript{mm\textsuperscript{2}} (B=0 images interleaved throughout if possible in product sequence)   \\
+Scan time            								& $\sim$ \num[round-precision = 0, round-mode = places]{8} \SI{}{\minute} \\
+Further explanations 							& Subjects should be instructed to remain still throughout the scan. \ac{DTI} should be acquired in 32 directions, with slices covering the top of the brain to the base of the cerebellum. Two sequences with reversed phase encoding direction should be acquired in full to correct for susceptibility induced distortions. \\
+\end{tabularx}
