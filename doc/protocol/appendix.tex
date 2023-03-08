@@ -23,20 +23,19 @@ Aside from listing all questionnaires and additional data, this appendix is also
 
 \section{Informed consent form for patients}
 \label{sec:icf_patient} 
-\includepdf[pages=-]{informed_consent_patient.pdf}
+\includepdf[pages=-]{./appendix/informed_consent_patient.pdf}
 
 \section{Informed consent form for relatives}
 \label{sec:icf_relative}
-\includepdf[pages=-]{informed_consent_relative.pdf}  
+\includepdf[pages=-]{./appendix/informed_consent_relative.pdf}  
 
 \section{Adverse events log sheet}
 \label{sec:ae_log}
-\include{adverse_events_log}
+\include{./appendix/adverse_events_log}
 
 \section{End of study form}
 \label{sec:eos_form}
-\includepdf[pages=-]{end_of_study_form.pdf}  
-
+\includepdf[pages=-]{./appendix/end_of_study_form.pdf}  
 
 \pagestyle{plain}
 
@@ -50,3 +49,9 @@ Aside from listing all questionnaires and additional data, this appendix is also
 \include{SOP_Biobank}
 \setcounter{page}{1}
 \include{SOP_Blutbild_Anmeldung_Zentrallabor}
+
+% @Urs TODO: make this optional, i.e. create a switch in
+% make_protocol.sh for a version with and without the quesionnaires
+\section{MDS-UPDRS}
+\label{sec:mds_updrs}
+\includepdf[pages=-]{./questionnaires/MDS-UPDRS_German_OfficialTranslation_FINAL.pdf}  
