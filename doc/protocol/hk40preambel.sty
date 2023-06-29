@@ -21,6 +21,7 @@
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 
 % \usepackage{ebgaramond}
+\usepackage{textcomp}
 \usepackage{setspace}
 \setstretch{1.5}
 \usepackage{nameref}
@@ -124,5 +125,34 @@
 \newcommand\mc[1]{\multicolumn{1}{C}{#1}} % shortcut macro
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} % TODO what is this?
 \newcommand{\UKM}[1]{University Hospital of Marburg}
-\cfoot{Protocol version: \input{major_version.txt}\unskip.\input{minor_version.txt}\hspace{10cm}}
+\cfoot{ Protocol version: \input{major_version.txt}\unskip.\input{minor_version.txt}\hspace{10cm}}
 \newcommand{\inputtable}[1]{\setstretch{1}\input{./tables/#1}\setstretch{1.5}}
+
+% Custom command to capitalize first letter of \acl (thank you ChatGPT)
+\makeatletter
+\newcommand{\AAcl}[1]{%
+  \expandafter\@for\expandafter\next\expandafter:\expandafter=\expandafter#1\expandafter\do{%
+    \expandafter\ifx\expandafter.\expandafter\next\expandafter\@car\@cdr#1.\relax\@nil
+      \expandafter\@gobble
+    \else
+      \expandafter\@firstofone
+    \fi
+    {\MakeUppercase{\next}}%
+  }%
+  \acl{#1}%
+}
+\makeatother
+
+\newenvironment{tabitemize}
+    {\setlist[itemize]{noitemsep, topsep=0pt,leftmargin=*}
+     \begin{minipage}[t]{\linewidth}
+     \begin{itemize}}
+    {\end{itemize}
+     \end{minipage}}
+
+
+% headings for scores and psychometrics
+\newcommand{\QScores}{\vspace*{1.5em}\noindent\underline{Scores:}}
+\newcommand{\QPsychometrics}{\vspace*{1.5em}\noindent\underline{Psychometrics:}}
+
+\newcommand{\regd}{\textsuperscript{\textregistered{}}}% circle with R

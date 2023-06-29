@@ -1,28 +1,23 @@
-\begin{table}[H]
-\caption{Details on Gradient recalled echo sequence with MT preparation}
-\small
-\setstretch{1}
 \begin{tabularx}{\linewidth}{@{} s | X @{}}
-\caption{Details on REPEAT T2-weighted \ac{MRI}-sequence}\\
+\caption{Details on Gradient recalled echo sequence with MT preparation}\\
 \toprule
 \multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D Gradient recalled echo with MT preparation}} \\
-\midrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-Series description                                                                	& 2D GRE-MT                                  			\\
-Plane                                                                                      	& Oblique	\\
-Slice thickness                                                          		& \SI{1.5}{\milli\metre} 	\\
-Number of slices                                                      		& \num[round-precision = 0, round-mode = places]{16}  \\
-Phase encode dir.                                                                 	& Right--Left (RL)              \\
-Matrix                                                                                     	& \num[round-precision = 0, round-mode = places]{440} $\times$ \num[round-precision = 0, round-mode = places]{440} \\
-\ac{FoV}                                                                                  	& \num{220} $\times$ \SI{220}{\milli\metre}				\\
-Voxel size                                                             			& \SI{.5}{} $\times$ \SI{.5}{} $\times$ \SI{1.5}{}		\\
-Repetition time	                                                            	& \num[round-precision = 0, round-mode = places]{465}\SI{}{\milli\second}\\
-Echo time	                                                                        	& \SI{4.71}{\milli\second})                                          \\
-Flip angle                                                                                 	& 40                                          \\
-MT pulse FA									& 300 					\\
-MT offset frequency FA							& \SI{1.5}{\kilo\hertz} (\SI{3}{\tesla})\\
-MT pulse duration 								& \num[round-precision = 0, round-mode = places]{10}\SI{}{\milli\second}\\
-Number of measurements                                                  & $\sim$ \num[round-precision = 0, round-mode = places]{10}\SI{}{\minute}     \\
-Receive band width 							& smaller than \num[round-precision = 0, round-mode = places]{500} \SI{}{\hertz} per Pixel 	\\
+\midrule 
+Series description     & 2D GRE-MT \\
+Plane                  & Oblique \\
+Slice thickness        & 1.5mm \\
+Number of slices       & \num[round-precision = 0, round-mode = places]{16} \\
+Phase encode dir.      & Right--Left (RL) \\
+Matrix                 & \num[round-precision = 0, round-mode = places]{440} $\times$ \num[round-precision = 0, round-mode = places]{440} \\
+\ac{FoV}               & 220 $\times$ 220mm \\
+Voxel size             & $0.5 \times 0.5 \times 1.5$mm \\
+Repetition time        & 465ms \\
+Echo time              & 4.71ms \\
+Flip angle             & 40deg \\
+MT pulse FA            & 300 \\
+MT offset frequency FA & 1.5kHz (\SI{3}{\tesla}) \\
+MT pulse duration      & 10ms \\
+Scan time              & $\sim$10min \\
+Receive band width     & smaller than 500Hz per Pixel \\
 \bottomrule
 \end{tabularx}
-\end{table}

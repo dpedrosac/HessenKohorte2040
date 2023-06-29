@@ -2,24 +2,31 @@
 \begin{tabularx}{\linewidth}{@{} s | X @{}}
 \caption{Details on REPEAT T2-weighted \ac{MRI}-sequence} \\
 \toprule
-\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}{\textbf{2D-Gradient-echo T2*-weighted \ac{EPI} (e.g., ep2d\_BOLD)}}  \\
+\multicolumn{2}{p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}}  %
+{\textbf{2D-Gradient-echo T2*-weighted \ac{EPI} (e.g., ep2d\_BOLD)}} \\
 \midrule                                                                                                                                                           
-Series Description     		& rsfMRI\_LR                                  \\
-Plane                  			& Axial Oblique, plane parallel to AC-PC line \\
-Slice thickness (mm)  		& \SI{3.5}{\milli\metre} with no gap                             \\
-Number of Slices       		& $\sim$40                                    \\
-Phase encode dir.      		& L $\gg$ R              \\
-Matrix                 			& 64 $\times$ 64                              \\
-\ac{FOV}               			& \SI{224}{} $\times$ \SI{224}{\milli\metre}                         \\
-Repetition Time (ms)   		& \num{2500}                                  \\
-Echo Time (ms)         		& 30                                          \\
-Flip angle             			& 80                                          \\
-Slice order            			& Interleaved                                 \\
-Number of measurements 	& 10 (\SI{25}{\seconds} total scan time)      \\
-In-plane acceleration  		& GRAPPA or SENSE (factor of 2)               \\
-Instructions           			& Keep the eyes open and remain still         \\
-Scan Time              			& $\sim$ \SI{25}{\seconds}                     \\
-Further explanations   		& Patients should be instructed to keep their eyes open throughout the scan, e.g. by focusing on a point on the mirror or scanner. Immediately after the scan, the subject should be checked to ensure that they have kept their eyes open and have not fallen asleep. There should be no audio or video presentation during the scan.\\
+Series Description     & rsfMRI\_LR                                  \\
+Plane                  & Axial Oblique, plane parallel to AC-PC line \\
+Slice thickness        & 3.5mm with no gap                           \\
+Number of Slices       & $\sim$40                                    \\
+Phase encode dir.      & L $\gg$ R                                   \\
+Matrix                 & 64 $\times$ 64                              \\
+\ac{FOV}               & 224 $\times$ 224mm                          \\
+Repetition Time        & 2500ms                                      \\
+Echo Time              & 30ms                                        \\
+Flip angle             & 80deg                                       \\
+Slice order            & Interleaved                                 \\
+Number of measurements & 10 (25s total scan time)                    \\
+In-plane acceleration  & GRAPPA or SENSE (factor of 2)               \\
+Instructions           & Keep the eyes open and remain still         \\
+Scan Time              & $\sim$25s                                   \\
+Further explanations   & Patients should be instructed to keep their eyes open throughout the   
+                         scan, e.g. by focusing on a point on the mirror or                     
+                         scanner. Immediately after the scan, the subject should be checked to  
+                         ensure that they have kept their eyes open and have not fallen         
+                         asleep. There should be no audio or video presentation during the      
+                         scan.\\
+\bottomrule                                                                
 \end{tabularx}
 
 

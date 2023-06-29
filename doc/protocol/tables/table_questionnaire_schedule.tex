@@ -1,6 +1,7 @@
 % \newcommand{\FC}{\phantom{mn}\raisebox{4pt}{\circle*{10pt}}}
 % \newcommand{\emC}{\phantom{mn}\raisebox{4pt}{\circle{10}}}
 \newcommand{\FC}{$\times$}
+\newcommand{\FCa}{\textsuperscript{\phantom{a}}\FC{}\textsuperscript{a}}
 \newcommand{\emC}{}
 \newcommand{\acb}[1]{\acs{#1}: \acl{#1}}
 \newcommand{\acv}[1]{\begin{NoHyper}\acs{#1}\end{NoHyper}}
@@ -10,7 +11,7 @@
 \label{tab:questionnaireSchedule}\\
 \textbf{} & & \multicolumn{3}{c}{\textbf{patients}} & & \multicolumn{3}{c}{\textbf{caregivers}} \\[1em]
 \textbf{Questionnaire}& & baseline & 6 months & 1 year  & & baseline   & 6 months & 1 year \\[1em]
-\acv{CHAPO-PD}        & & \FC{}    & \emC{}   & \FC{}   & & \emC{} & \emC{}   & \emC{} \\
+\acv{HoLy-PD}         & & \emC{}   & \emC{}   & \FCa{}  & & \emC{} & \emC{}   & \emC{} \\
 \acv{MDS-UPDRS}       & & \FC{}    & \emC{}   & \FC{}   & & \emC{} & \emC{}   & \emC{} \\
 \acv{PDQ39}           & & \FC{}    & \FC{}    & \FC{}   & & \emC{} & \emC{}   & \emC{} \\
 \acv{NMSQ}            & & \FC{}    & \FC{}    & \FC{}   & & \emC{} & \emC{}   & \emC{} \\
@@ -22,7 +23,9 @@
 \acv{WHOQoL}          & & \FC{}    & \emC{}   & \FC{}   & & \FC{}  & \emC{}   & \FC{}  \\
 \acv{CBI}             & & \emC{}   & \emC{}   & \emC{}  & & \FC{}  & \FC{}    & \FC{}  \\
 \acv{PDCB}            & & \emC{}   & \emC{}   & \emC{}  & & \FC{}  & \FC{}    & \FC{}  \\                              
-\acv{CISS}            & & \emC{}   & \emC{}   & \emC{}  & & \FC{}  & \emC{}   & \emC{}
+\acv{CISS}            & & \emC{}   & \emC{}   & \emC{}  & & \FC{}  & \emC{}   & \emC{} \\
+\bottomrule
+\multicolumn{9}{l}{\footnotesize{\textsuperscript{a}From the 2\textsuperscript{nd} year on}} \\
 \end{tabular}
 
 \bigskip
