@@ -53,7 +53,8 @@
 \usepackage[bottom]{footmisc}
 \usepackage{microtype}
 \usepackage[square, sort, numbers]{natbib}
-\bibliographystyle{abbrvnat}
+%\bibliographystyle{abbrvnat}
+\bibliographystyle{unsrt}
 \usepackage{multicol}
 \usepackage{ltablex}
 \usepackage{pdfpages}
@@ -125,7 +126,8 @@
 \newcommand\mc[1]{\multicolumn{1}{C}{#1}} % shortcut macro
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} % TODO what is this?
 \newcommand{\UKM}[1]{University Hospital of Marburg}
-\cfoot{ Protocol version: \input{major_version.txt}\unskip.\input{minor_version.txt}\hspace{10cm}}
+
+\cfoot{\scriptsize Protocol version: \input{major_version.txt}\unskip.\input{minor_version.txt}}
 \newcommand{\inputtable}[1]{\setstretch{1}\input{./tables/#1}\setstretch{1.5}}
 
 % Custom command to capitalize first letter of \acl (thank you ChatGPT)
